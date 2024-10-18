@@ -1,0 +1,15 @@
+.advantage-item(class=className)
+    .advantage-item__icon
+        img(src=icon, alt=icon)
+    .title.advantage-item__title #{title}
+    if className === 'exam'
+        .advantage-item__arrow
+            svg.icon.icon-font 
+                use(xlink:href='assets/icons/icons.svg#icon-angle-right')
+    if className === 'why'
+        .advantage-item__arrow
+            svg.icon.icon-font 
+                use(xlink:href='assets/icons/icons.svg#icon-angle-right')
+    if text  
+        .advantage-item__text #{text}
+    

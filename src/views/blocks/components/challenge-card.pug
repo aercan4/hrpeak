@@ -1,0 +1,63 @@
+.challenge-card.accordion-item
+    .challenge-card-header
+        .challenge-card-header-top
+            .logo
+                img(src="assets/img/turkish_airlines.svg", alt="")
+        
+        if challengeDetail
+            .challenge-card-text-wrapper
+                p.text.text--sm.challenge-card-text Şirketimizde muhasebe departmanında görev alacak deneyimli ve yetenekli bir Muhasebe Uzmanı arıyoruz. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates dolore, accusantium a enim, corrupti aliquam tempore placeat fuga fugit cumque quam doloribus sit nisi, eaque dignissimos est quasi eos excepturi! 
+                .challenge-card-text-icon.js-show-text
+                    svg.icon.icon-font
+                            use(xlink:href='assets/icons/icons.svg#icon-angledown')
+            
+        
+        .challenge-card-header-content
+            .company-title Türk Hava Yolları
+            .company-position Senior Product Designer
+    .challenge-card-content.accordion-content
+        .accordion-calc
+            .preference-item 
+                .preference-item-title Tecrübe
+                .preference-item-text 1-3 Yıl
+                    .text-icon
+                        svg.icon.icon-font
+                            use(xlink:href='assets/icons/icons.svg#icon-tik')
+            .preference-item 
+                .preference-item-title Lokasyon
+                .preference-item-text İstanbul
+                    .text-icon
+                        svg.icon.icon-font
+                            use(xlink:href='assets/icons/icons.svg#icon-tik')
+            .preference-item 
+                .preference-item-title Çalışma Yeri
+                .preference-item-text Remote
+                    .text-icon
+                        svg.icon.icon-font
+                            use(xlink:href='assets/icons/icons.svg#icon-tik')
+            .preference-item 
+                .preference-item-title Eğitim
+                .preference-item-text Lisans ve Üstü (Mezun)
+                    .text-icon
+                        svg.icon.icon-font
+                            use(xlink:href='assets/icons/icons.svg#icon-tik')
+            .preference-item 
+                .preference-item-title Maaş Aralığı
+                .preference-item-text 15.000 TL - 30000 TL
+                    .text-icon
+                        svg.icon.icon-font
+                            use(xlink:href='assets/icons/icons.svg#icon-tik')
+
+    .accordion-btn.js-accordion-btn
+        span.js-change-text Uyumlulukları Göster
+        .accordion-icon
+            svg.icon.icon-font
+                use(xlink:href='assets/icons/icons.svg#icon-angledown')
+    if challengeListing
+        .challenge-card-footer
+            a(href="challenge-detail.html").btn.btn--black.btn--sm.btn--i-right
+                span.btn__text Hemen Katıl
+                span.btn__icon.icon-font
+                    svg.icon.icon-font
+                        use(xlink:href='assets/icons/icons.svg#icon-tik')
+

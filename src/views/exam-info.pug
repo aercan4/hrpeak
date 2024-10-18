@@ -1,0 +1,94 @@
+extends blocks/layout
+block vars
+    - var index = true;
+    - var header = true;
+    - var footer = true;
+    - var shortcut = true;
+    - var challengeListing = true;
+
+block append head
+    title Sınav Bilgilendirme | Hr Peak
+    meta(name='description' content="One tool to manage contracts and your team")
+    // Facebook
+    meta(property='og:title' content='Hr Peak')
+    meta(property='og:description' content="One tool to manage contracts and your team")
+    meta(property='og:image' content='assets/img/thumb.jpg')
+    // Twitter
+    meta(property='twitter:url' content='#')
+    meta(property='twitter:title' content='Hr Peak')
+    meta(property='twitter:description' content="One tool to manage contracts and your team")
+    meta(property='og:image' content='assets/img/thumb.jpg')
+
+block content
+    .subpage.exam-info
+
+        .subpage-intro 
+            .container.container--small
+                .hero
+                    h5.toptitle Sınav Bilgilendirme
+                    h1.title.title--xxl.title--center.hero-title HRPeak Sınavlarına Hoşgeldiniz!
+                    .hero-img-wrapper
+                        img(src="assets/img/sinav-bilgi.png").hero-img
+            img(src="assets/img/hero-grid.svg").bg-grid
+
+
+        .subpage-content   
+            .exam-info-what.container
+                div
+                    h5.toptitle Tarihçemiz
+                    p.title.title--lmd.fw-400 We make it effortlessly to track all user analytics
+                div 
+                    p HRPeak sınavları alanında uzman akademisyenler ve eğitimciler tarafından hazırlanmaktadır. Hazırlanan sorular siz adayların karşısına gelmeden önce bir norm grubu tarafından çözülerek test edilmekte ve seviyelendirilmektedir.
+                    p Sorular genellikle; adayların tablo-grafik okuma, sözel, sayısal ve soyut kavrama seviyelerini ölçmeye yöneliktir. Ayrıca karşınıza kod yazım tabanlı yazılım sınavları, dikkat testi ve klavye sınavı gibi uygulamalar da çıkabilir. Bir HRPeak sınavıyla karşılaşıyorsanız muhtemelen bir kurum çalışanı veya iş başvurusu yapan bir adaysınız. Size gelen SMS ve/veya E-Mail’deki linki tıklayarak sürecinize dahil olabilirsiniz. Kurumlar küçük değişiklikler yapabilirler fakat süreç genel olarak gayet basit;      
+            .exam-info-what-slider.container
+                .advantage-item-slider.swiper-container.visible-active
+                    .swiper-wrapper
+                        .swiper-slide(style="z-index: 100;") 
+                            - var title = "Simplify the candidate evaluation processes."
+                            - var icon = "assets/img/framed_user.svg"
+                            - var className = "exam"
+                            include blocks/components/advantage-item
+                        .swiper-slide(style="z-index: 99;") 
+                            - var title = "Increase brand brand value."
+                            - var icon = "assets/img/diamond.svg"
+                            include blocks/components/advantage-item
+                        .swiper-slide(style="z-index: 98;") 
+                            - var title = "Simplify the candidate evaluation processes."
+                            - var icon = "assets/img/integrated.svg"
+                            include blocks/components/advantage-item
+                        .swiper-slide(style="z-index: 97;") 
+                            - var title = "Find the best candidate, fast!"
+                            - var icon = "assets/img/data_storage.svg"
+                            include blocks/components/advantage-item
+                        .swiper-slide(style="z-index: 96;") 
+                            - var title = "Find the best candidate, fast!"
+                            - var icon = "assets/img/candidate.svg"
+                            include blocks/components/advantage-item
+            .exam-info-attention
+                .container 
+                    h5.toptitle Neden Biz?
+                    p.title.title--lmd.fw-400 We make it effortlessly to track all user analytics
+                    .exam-info-attention-wrapper
+                        include blocks/components/why-use-item
+                        include blocks/components/why-use-item
+                        include blocks/components/why-use-item
+                        include blocks/components/why-use-item
+                        include blocks/components/why-use-item
+                        include blocks/components/why-use-item
+            .exam-info-faq 
+                - var faqSectionTitle = "Sıkça Sorulan Sorular"
+                - var faqSectionDescription = "İçerisinde global şirketlerin de bulunduğu 1000’den fazla firmaya hizmet sağlayan HRPeak,"
+                - var exam = true
+                include blocks/components/faq-section 
+
+
+
+
+
+
+
+
+
+
+
+

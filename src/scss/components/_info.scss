@@ -1,0 +1,37 @@
+.info {
+    &-icon {
+        height: 6rem;
+        width: 6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: $c-white;
+        border-radius: 1.3rem;
+        color: $c-blue;
+        font-size: 2.8rem;
+        border: 1px solid $c-border;
+        box-shadow: $box-shadow;
+    }
+    &-img {
+        height: 3.5rem;
+        object-fit: contain;
+    }
+    &-title {
+        margin-top: 2rem;
+        font-size: 1.6rem;
+    }
+    &-text {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+    &--row {
+        .info-top {
+            display: flex;
+            align-items: center;
+            gap: 2.7rem;
+        }
+        .info-title {
+            margin-top: 0;
+        }
+    }
+}

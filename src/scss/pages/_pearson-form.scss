@@ -1,0 +1,78 @@
+.pearson-form {
+    .subpage-intro {
+        border-bottom: 1px solid $c-border;
+        height: 94rem;
+        .hero-title {
+            max-width: 85rem;
+        }
+        .hero-img-wrapper {
+            width: 77rem;
+            max-width: 77rem;
+            height: 30rem; 
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    &-box {
+        border-radius: 2.4rem;
+        border: 1px solid $c-border;
+        background: $c-white;
+        box-shadow: 0px 10px 20px -15px rgba(143, 143, 163, 0.4);
+        max-width: 83rem;
+        margin: -31.5rem auto 0;
+        position: relative;
+        z-index: 10;
+
+        &-top {
+            padding: 4rem 3.3rem;
+            border-bottom: 1px solid $c-border;
+            &-head {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 2.8rem;
+                width: 100%;
+
+                img {
+                    height: 5rem;
+                    width: auto;
+                }
+
+                svg {
+                    font-size: 4.5rem;
+                    color: rgba($c-black, 0.4);
+                }
+
+             
+            }
+
+            &-content {
+                margin-top: 4.6rem;
+                p {
+                    font-size: 1.6rem;
+                    font-weight: 300;
+                    color: rgba($c-black, 0.9);
+                    line-height: 3rem;
+                    text-align: center;
+                    letter-spacing: -0.16px;
+
+                    & + p {
+                        margin-top: 2.6rem;
+                    }
+                }
+            }
+        }
+
+        &-form {
+            padding: 4rem 3.3rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2.2rem;
+        }
+    }
+}

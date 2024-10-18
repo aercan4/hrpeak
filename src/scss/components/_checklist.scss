@@ -1,0 +1,37 @@
+.checklist {
+  padding-left: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 7.4rem;
+  grid-row-gap: 2.8rem;
+
+  li {
+    color: $c-black;
+    font-size: 1.7rem;
+    padding-left: .5rem;
+    line-height: 1.5;
+    list-style: none;
+
+    // &:not(:last-child) {
+    //   margin-bottom: 2rem;
+    // }
+
+    &::before {
+      content: '';
+      width: 1em;
+      height: 1em;
+      font-size: 20px;
+      border-radius: 50%;
+      position: absolute;
+      left: -3rem;
+      top: .3rem;
+      // transform: translateY(-50%);
+      background-color: $c-green;
+      background-image: url('../img/checkmark.svg');
+      background-size: .5em;
+      background-position: center;
+      background-repeat: no-repeat;
+      flex-shrink: 0;
+    }
+  }
+}

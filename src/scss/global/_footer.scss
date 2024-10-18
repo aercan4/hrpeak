@@ -1,0 +1,353 @@
+.footer {
+  width: 100%;
+  position: relative;
+  padding-top: 7rem;
+
+  @include bp(mobile) {
+    padding: 5rem 0;
+    padding-bottom: 3rem;
+    margin-top: 5rem;
+    border-top: 1px solid $c-border;
+  }
+
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    padding-left: var(--container-pusher);
+    padding-right: var(--container-pusher);
+
+    @include bp(tablet) {
+      flex-direction: column;
+      gap: 4rem;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    &-left {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex: 0 0 34%;
+      max-width: 34%;
+
+      @include bp(tablet) {
+        flex: unset;
+        max-width: unset;
+        padding: 0 var(--container-gutter);
+      }
+
+      @include bp(mobile) {
+        border-bottom: 1px solid $c-border;
+        padding-bottom: 4rem;
+      }
+
+      &-item {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+
+        @include bp(mobile) {
+          gap: 3rem;
+        }
+      }
+
+      .footer-text {
+        max-width: 26rem;
+        line-height: 1.9;
+      }
+    }
+
+    &-right {
+      flex: 0 0 65%;
+      max-width: 65%;
+
+      @include bp(tablet) {
+        flex: unset;
+        max-width: unset;
+      }
+
+      &-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include bp(tablet) {
+          flex-direction: column;
+          gap: 3rem;
+          align-items: flex-start;
+        }
+
+        @include bp(mobile) {
+          padding-left: var(--container-pusher);
+          padding-right: var(--container-pusher);
+        }
+
+        &.title-section {
+          @include bp(tablet) {
+            display: none;
+          }
+        }
+
+        & + & {
+          margin-top: 2.5rem;
+          padding-top: 2.5rem;
+          border-top: 1px solid $c-border;
+
+          @include bp(mobile) {
+            padding-top: 0;
+            margin-top: 3.5rem;
+          }
+        }
+
+        &:nth-child(2) {
+          border-top: 0;
+          margin-top: 0.5rem;
+          @include bp(mobile) {
+            margin-top: 2.5rem;
+          }
+        }
+
+        .hire-btn {
+          gap: 1rem;
+          padding: 0 1.2rem;
+          padding-left: 2rem;
+
+          .badge {
+            font-weight: 700;
+          }
+        }
+      }
+    }
+
+    .logo {
+      height: 4.6rem;
+      object-fit: contain;
+      @include bp(mobile) {
+        height: 4rem;
+      }
+    }
+
+    .social {
+      &-wrapper {
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  &-menu {
+    display: flex;
+    width: 100%;
+    position: relative;
+    justify-content: space-between;
+
+    @include bp(tablet) {
+      flex-direction: column;
+    }
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+      width: 25.2%;
+
+      @include bp(tablet) {
+        width: 100%;
+        border-bottom: 1px solid $c-border;
+
+        &:last-child {
+          border-bottom: 0;
+        }
+      }
+
+      .footer-menu__title {
+        @include bp(r-tablet) {
+          display: none;
+        }
+
+        height: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        svg {
+          transition: $transition;
+
+          @include bp(mobile) {
+            font-size: 1.2rem;
+          }
+        }
+
+        &.active {
+          & + .footer-menu-content {
+            opacity: 1;
+            max-height: 100rem;
+            overflow: visible;
+            pointer-events: all;
+            margin-bottom: 2rem;
+          }
+
+          svg {
+            transform: scale(1, -1);
+          }
+        }
+      }
+    }
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+
+      @include bp(tablet) {
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        pointer-events: none;
+        transition: $transition;
+      }
+    }
+
+    &__link {
+      font-size: 1.5rem;
+      color: $c-black;
+      line-height: 1.5;
+      letter-spacing: $letter-spacing;
+
+      & + & {
+        margin-top: 1.2rem;
+      }
+
+      &:hover {
+        color: $c-blue;
+      }
+    }
+
+    &__title {
+      font-size: 1.6rem;
+      font-weight: 500;
+      color: $c-black;
+      // margin-bottom: 2.5rem;
+      letter-spacing: $letter-spacing;
+      line-height: 1.5;
+      width: 25.2%;
+
+      & + & {
+        // margin-top: 3.4rem;
+      }
+
+      &.footer-menu__link {
+        margin-bottom: 0;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    @include bp(tablet) {
+      //display: none;
+    }
+  }
+
+  &-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    &-item {
+      font-size: 1.7rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      color: $c-black;
+
+      &:hover {
+        color: $c-blue;
+      }
+
+      svg {
+        color: $c-blue;
+        font-size: 2rem;
+      }
+    }
+  }
+
+  &-copyright {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    margin-top: 10rem;
+    padding-left: var(--container-pusher);
+    padding-right: var(--container-pusher);
+    border-top: 1px solid $c-border;
+    position: relative;
+
+    @include bp(tablet) {
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 5rem;
+    }
+
+    @include bp(mobile) {
+      align-items: flex-start;
+      margin-top: 0;
+      padding-top: 2.5rem;
+      padding-bottom: 0;
+    }
+
+    &-links {
+      display: flex;
+      align-items: center;
+      gap: 2.6rem;
+
+      @include bp(mobile) {
+        flex-wrap: wrap;
+      }
+
+      &-row {
+        display: flex;
+        align-items: center;
+        gap: 2.6rem;
+      }
+
+      .footer-copyright-links-row + .footer-copyright-links-row {
+        margin-left: 2rem;
+        padding-left: 2rem;
+        border-left: 1px solid rgba($c-black, 0.2);
+
+        @include bp(tablet) {
+          border-left: 0;
+          margin-left: 2.6rem;
+          padding-left: 0;
+        }
+      }
+    }
+
+    &-link {
+      color: rgba($c-black, 0.5);
+      font-size: 1.4rem;
+      letter-spacing: $letter-spacing;
+
+      &:hover {
+        color: $c-black;
+      }
+    }
+
+    .text {
+      color: rgba($c-black, 0.85);
+      font-weight: 400;
+
+      @include bp(tablet) {
+        width: 100%;
+        text-align: center;
+      }
+
+      @include bp(mobile) {
+        text-align: left;
+      }
+    }
+  }
+}

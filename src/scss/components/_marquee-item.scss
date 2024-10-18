@@ -1,0 +1,93 @@
+.marquee {
+    &-wrapper {
+        width: 100%;
+        padding: 12rem 0;
+        position: relative;
+        z-index: 7;
+        padding-bottom: 3rem;
+        @include bp(mobile) {
+            padding-top: 9rem;
+        }
+        .marquee + .marquee {
+            margin-top: 2rem;
+            @include bp(mobile) {
+                margin-top: 2rem;
+            }
+        }
+        &-bg {
+            position: absolute;
+            top: 4rem;
+            z-index: -1;
+            width: 100%;
+            object-fit: contain;
+            height: 54rem;
+            @include bp(mobile) {
+                height: 20rem;
+                object-fit: cover;
+                top: 3rem;
+            }
+        }
+    }
+    &-section {
+        
+    }
+
+    &-content {
+        display: flex;
+        animation: scrolling 60s linear infinite;
+    }
+    &-item {
+        flex: 0 0 10vw;
+        margin: 0 0.7vw;
+        background: #fff;
+        padding: 0 1rem;
+        border-radius: 6rem;
+        height: 5.9rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: $box-shadow;
+        @include bp(tablet) {
+            height: 6rem;
+            flex: 0 0 20rem;
+        }
+        @include bp(mobile) {
+            margin: 0 .7rem;
+            padding: 0 .5rem;
+            height: 4.4rem;
+            flex: 0 0 10rem;
+            border-radius: 5rem;
+
+        }
+        img {
+            display: block;
+            height: 5.5rem;
+            height: auto;
+            object-fit: contain;
+            width: 100%;
+            // /   padding: 0 20px; */
+        }
+    }
+}
+
+.marquee:nth-child(even) .marquee-content {
+    display: flex;
+    animation: scrolling2 60s linear infinite;
+}
+
+@keyframes scrolling {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translatex(-124vw);
+    }
+}
+@keyframes scrolling2 {
+    0% {
+        transform: translateX(-124vw);
+    }
+    100% {
+        transform: translatex(0vw);
+    }
+}

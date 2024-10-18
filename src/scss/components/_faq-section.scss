@@ -1,0 +1,26 @@
+.faq-section {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid $c-border;
+    padding: 8rem var(--container-pusher);
+    gap: 13rem;
+
+    &.exam {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    &-left {
+        p.text {
+            margin-top: 2rem;
+        }
+
+        .btn {
+            margin-top: 4rem;
+        }
+    }
+}
+
+
+
+

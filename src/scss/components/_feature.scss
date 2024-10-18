@@ -1,0 +1,42 @@
+.feature {
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: #fff;
+  padding: 0 1.3rem;
+  padding-right: 2rem;
+  box-shadow: 0px 8.433px 16.866px -12.65px rgba(143, 143, 163, 0.4);
+  border-radius: 6.2rem;
+  border: 1px solid $c-border;
+  @include bp(mobile) {
+    height: 4.6rem;
+    padding: 0 1.1rem;
+    padding-right: 2rem;
+    gap: 1.2rem;
+  }
+
+  &__icon {
+    width: 3.3rem;
+    height: 3.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba($c-green, 0.15);
+    color: $c-green;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    @include bp(mobile) {
+      width: 2.8rem;
+      height: 2.8rem;
+      font-size: 1.1rem;
+    }
+  }
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    @include bp(mobile) {
+      font-size: 1.3rem;
+    }
+  }
+}

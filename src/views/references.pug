@@ -1,0 +1,278 @@
+extends blocks/layout
+block vars
+    - var index = true;
+    - var header = true;
+    - var footer = true;
+    - var shortcut = true;
+    - var challengeListing = true;
+
+block append head
+    title References | Hr Peak
+    meta(name='description' content="One tool to manage contracts and your team")
+    // Facebook
+    meta(property='og:title' content='Hr Peak')
+    meta(property='og:description' content="One tool to manage contracts and your team")
+    meta(property='og:image' content='assets/img/thumb.jpg')
+    // Twitter
+    meta(property='twitter:url' content='#')
+    meta(property='twitter:title' content='Hr Peak')
+    meta(property='twitter:description' content="One tool to manage contracts and your team")
+    meta(property='og:image' content='assets/img/thumb.jpg')
+
+block content
+    .subpage.references
+
+        .subpage-intro 
+            .container 
+                .hero
+                    h5.toptitle References
+                    h1.title.title--xxl.title--center.hero-title State of the Art 
+                        span.d-block Assessment Center
+                    .hero-img-wrapper
+                        img(src="assets/img/world-dekuped-2.png").hero-img
+
+        .subpage-content 
+            section.tab
+                .tab-link-wrapper.scroll-hidden
+                    .animated-tabs.scroll-hidden.animated-tabs--badge
+                        .animated-tabs-item.js-tab-item.js-filter-all.active(data-filter="all" data-scroll="true") 
+
+                            span Tümünü Gör
+                        .animated-tabs-item.js-tab-item(data-filter="tecrube" data-scroll="true") 
+
+                            span Tecrübe
+                        .animated-tabs-item.js-tab-item(data-filter="lokasyon" data-scroll="true") 
+
+                            span Lokasyon
+                        .animated-tabs-item.js-tab-item(data-filter="calismaSekli" data-scroll="true") 
+
+                            span Çalışma Şekli
+                        .animated-tabs-item.js-tab-item(data-filter="egitim" data-scroll="true") 
+
+                            span Eğitim
+                        .animated-tabs-item.js-tab-item(data-filter="tecrube" data-scroll="true") 
+
+                            span Tecrübe
+                        .animated-tabs-item.js-tab-item(data-filter="egitim" data-scroll="true") 
+
+                            span Eğitim
+                        .animated-tabs-item.js-tab-item(data-filter="tecrube" data-scroll="true") 
+
+                            span Tecrübe
+                        .animated-tabs-item.js-tab-item(data-filter="calismaSekli" data-scroll="true") 
+
+                            span Çalışma Şekli
+                        .animated-tabs-item.js-tab-item(data-filter="maasAraligi" data-scroll="true") 
+
+                            span Maaş Aralığı
+                        .animated-tabs-item.js-tab-item(data-filter="calismaSekli" data-scroll="true") 
+
+                            span Çalışma Şekli
+                        .animated-tabs-item.js-tab-item(data-filter="maasAraligi" data-scroll="true") 
+
+                            span Maaş Aralığı
+                        .ghost
+
+
+                .tab-content-wrapper
+                    .container.container--small
+                        .section-divider-shape   
+                            img(src="assets/img/basic-logo.svg")
+                        .tab-content
+                            .references-grid
+                                - var referenceItemCustomClass = "filtered-item tecrube"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item tecrube"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item tecrube"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item tecrube"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item tecrube"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item tecrube"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item tecrube"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item tecrube"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item tecrube"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item tecrube"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item tecrube"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item tecrube"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item lokasyon"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item lokasyon"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item lokasyon"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item lokasyon"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item lokasyon"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item lokasyon"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item lokasyon"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item lokasyon"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item lokasyon"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item lokasyon"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item lokasyon"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item lokasyon"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item calismaSekli"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item calismaSekli"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item calismaSekli"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item calismaSekli"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item calismaSekli"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item calismaSekli"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item calismaSekli"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item calismaSekli"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item calismaSekli"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item calismaSekli"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item calismaSekli"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item calismaSekli"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item egitim"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item egitim"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item egitim"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item egitim"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item egitim"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item egitim"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item egitim"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item egitim"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item egitim"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item egitim"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item egitim"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item egitim"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item maasAraligi"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item maasAraligi"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item maasAraligi"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item maasAraligi"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item maasAraligi"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item maasAraligi"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item maasAraligi"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item maasAraligi"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item maasAraligi"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item maasAraligi"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item maasAraligi"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+                                include blocks/components/reference-item
+                                - var referenceItemCustomClass = "filtered-item maasAraligi"
+                                - var referenceImg = "assets/img/petrol_ofisi.svg"
+
+
+
+
+
+
+
+
+
+
+
+
+
+

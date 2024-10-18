@@ -1,0 +1,30 @@
+.why-use-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-bottom: 1px solid rgba($c-border-dark, .5);
+    padding-bottom: 3.7rem;
+
+    img {
+        height: 3.8rem;
+        width: 3.8rem;
+    }
+
+    h3 {
+        font-size: 1.7rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 26px; /* 152.941% */
+        letter-spacing: -0.17px;
+        max-width: 14.5rem;
+    }
+
+    p {
+        color: rgba($c-black, .8);
+        font-size: 1.5rem;
+        font-weight: 300;
+        line-height: 28px; 
+        letter-spacing: -0.15px;
+        max-width: 36rem;
+    }
+}

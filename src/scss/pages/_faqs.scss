@@ -1,0 +1,68 @@
+.faqs {
+    .subpage-intro {
+        display: flex;
+        justify-content: space-between;
+        background: transparent;
+    }
+
+    .support-card {
+        border-radius: 2rem;
+        border: 1px solid $c-border;
+        background: $c-white;
+        box-shadow: 0px 60px 60px -40px rgba(143, 143, 163, 0.4);
+        padding: 1.9rem;
+        display: flex;
+
+        &-content {
+            padding-left: 1.7rem;
+            padding-top: 1.5rem;
+            padding-bottom: 1rem;
+        }
+
+        .title {
+            font-size: 1.8rem;
+        }
+
+        .description {
+            color: rgba($c-black, 0.8);
+            font-size: 1.5rem;
+            font-weight: 300;
+            line-height: 28px;
+            letter-spacing: -0.15px;
+            max-width: 32rem;
+            margin-top: 1rem;
+        }
+
+        &-arrow {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f5f6fb;
+            border-radius: 1rem;
+            width: 4.8rem;
+            font-size: 2rem;
+            transition: all 0.3s;
+        }
+
+        &:hover {
+            .support-card-arrow {
+                background: $c-black;
+                color: #fff;
+            }
+        }
+    }
+
+    .tab {
+        margin-top: 8rem;
+
+        &-link-wrapper {
+            border-top: 1px solid $c-border;
+            padding: 5rem 0 5rem;
+        }
+    }
+}
+
+
+
+  

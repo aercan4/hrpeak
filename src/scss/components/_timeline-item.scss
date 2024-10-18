@@ -1,0 +1,116 @@
+.timeline-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: right;
+    & + & {
+        margin-top: 6rem;
+    }
+    &:last-child {
+        .timeline-item-button {
+            .line {
+                display: none;
+            }
+        }
+    }
+    &-left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        flex: 0 0 42.5%;
+        max-width: 42.5%;
+        .badge {
+            margin-bottom: 1.5rem;
+        }
+    }
+    &-img {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        flex: 0 0 42.5%;
+        max-width: 42.5%;
+        border-radius: 3rem;
+        overflow: hidden;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    &-button {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        color: $c-white;
+        background: linear-gradient(0deg, #141417 0%, #141417 100%), #edeff9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        position: relative;
+        .line {
+            background: rgba(#C2C2D3, .8);
+            height: 45rem;
+            width: 1px;
+            top: 6.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            position: absolute;
+            @include bp(r-desktop-m) {
+                height: 52rem;
+            }
+            @include bp(r-desktop-l) {
+                height: 68rem;
+            }
+            &::before , &::after {
+                content: "";
+                width: .5rem;
+                height: .5rem;
+                border-radius: 50%;
+                background: rgba(#C2C2D3, .8);
+                position: absolute;
+                left: 50%;
+                z-index: 1;
+            }
+            &::before {
+                top: 0;
+                transform: translate(-50% , -100%);
+                
+            }
+            &::after {
+                bottom: 0;
+                transform: translate(-50% , 100%);
+                
+            }
+        }
+    }
+    .title {
+        font-weight: 400;
+        max-width: 35rem;
+    }
+    .text {
+        margin-top: 2rem;
+        max-width: 35rem;
+        
+    }
+
+    &--reverse {
+        flex-direction: row-reverse;
+        text-align: left;
+        .timeline-item-left {
+            align-items: flex-start;
+        }
+    }
+}
+.timeline-wrapper {
+    .shape {
+        &.shape-3 {
+            left: 0;
+            top: 0;
+        }
+        &.shape-4 {
+            right: 0;
+            top: 55rem;
+        }
+    }
+}

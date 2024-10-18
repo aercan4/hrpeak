@@ -1,0 +1,27 @@
+.references {
+ .hero {
+    &-img {
+        border: none;
+        border-radius: 0;
+        &-wrapper {
+            margin-top: 4rem;
+            margin-bottom: 0;
+            max-width: unset;
+        }
+    }
+ }
+ .subpage-content {
+    position: relative;
+    z-index: 2;
+    transform: translateY(-25rem);
+    margin-bottom: -25rem;
+    .tab-link-wrapper {
+        border-bottom: 0;
+    }
+    .tab-content-wrapper {
+        padding-top: 10rem;
+        margin-top: 10rem;
+        border-top: 1px solid $c-border;
+    }
+ }
+}

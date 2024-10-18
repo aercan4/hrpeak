@@ -1,0 +1,284 @@
+html,
+body {
+  // overflow-x: visible !important;
+  // overflow: visible !important;
+  width: 100%;
+}
+
+html {
+
+  font-size: 10px;
+
+  @include bp(r-desktop-l) {
+    font-size: 10px;
+  }
+
+  @include bp(desktop-ml) {
+    //font-size: 9px;
+  }
+
+  @include bp(desktop-m) {
+    //font-size: 8px;
+  }
+
+  @include bp(laptop) {
+    font-size: 9px;
+  }
+
+  @include bp(laptop-s) {
+    font-size: 9px;
+  }
+
+  // @include bp(desktop) {
+  //   font-size: 9px;
+  // }
+
+  @include bp(tablet) {
+    font-size: 8px;
+  }
+
+  @include bp(mobile) {
+    font-size: 10px;
+  }
+
+  @include bp(mobile-x-small) {
+    font-size: 8px;
+  }
+}
+
+body {
+  font-family: $font-family-base;
+  font-size: 1.6rem;
+  background-color: $c-bg;
+  transition: $transition;
+  color: $c-text;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility !important;
+
+  &.dark {
+    background: #000;
+    color: $c-white;
+  }
+
+  &::before {
+    content: "";
+    background: linear-gradient(180deg, #f6f8ff 30.13%, rgba(246, 248, 255, 0) 100%);
+    left: 0;
+    top: 0;
+    height: 68rem;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    pointer-events: none;
+  }
+}
+
+.custom-scroll {
+  &::-webkit-scrollbar {
+    background: $c-bg;
+    width: 0.6rem;
+    padding-right: 10px;
+    margin-top: 10rem;
+    max-height: 50%;
+    height: 50%;
+    display: block;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $c-bg;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba($c-gray , .3);
+    max-height: 50px;
+    height: 50px;
+    border-radius: 2px;
+
+  }
+
+  &::-webkit-scrollbar-track-piece:end {
+    background: $c-bg;
+
+  }
+
+  &::-webkit-scrollbar-track-piece:start {
+    background: $c-bg;
+
+  }
+}
+
+.container {
+  max-width: var(--container-width);
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include bp(mobile) {
+    padding: 0 var(--container-gutter);
+  }
+
+  &--medium {
+    max-width: 118rem;
+
+    @include bp(mobile) {
+      max-width: 100%;
+      padding: 0 var(--container-gutter);
+    }
+  }
+
+  &--small {
+    // padding: 0 6rem;
+    max-width: 108rem;
+
+    @include bp(mobile) {
+      max-width: 100%;
+      padding: 0 var(--container-gutter);
+    }
+  }
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+}
+
+// Overlay
+
+.overlay {
+  background: rgba(#000, 0.3);
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  top: 0;
+  left: 0;
+  transition: $transition;
+  opacity: 0;
+  pointer-events: none;
+
+  &.active {
+    opacity: 0.75;
+    pointer-events: all;
+  }
+}
+
+.modal-overlay {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  top: 0;
+  left: 0;
+  transition: $transition;
+  opacity: 0;
+  pointer-events: none;
+  background: rgba(#000, 0.3);
+
+  &.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
+.scroll-hidden {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.hidden {
+  display: none !important;
+}
+
+.mobile-hidden {
+  display: none !important;
+
+  @include bp(r-tablet-small) {
+    display: flex !important;
+  }
+}
+
+.swiper-container-fa .swiper-slide {
+  pointer-events: all;
+}
+
+.modal-video-close-btn {
+  position: absolute;
+  z-index: 2;
+  top: -50px;
+  right: 0;
+  background: #fff;
+  width: 40px;
+  height: 40px;
+  transition: $transition;
+  cursor: pointer;
+  border-radius: 20px;
+
+  &:hover,
+  &:focus {
+    background-color: $c-green;
+    outline: 0;
+
+    &::after,
+    &::before {
+      background: #fff;
+    }
+
+    &::before {
+      transform: rotate(180deg);
+    }
+
+    &::after {
+      opacity: 0;
+      transform: rotate(180deg);
+    }
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    width: 20px;
+    height: 3px;
+    border-radius: 10px;
+    background-color: $c-green;
+    transition: $transition;
+  }
+}
+
+// List
+ul,
+ol {
+  font-size: 2rem;
+  line-height: 1.5em;
+  padding-left: 2.4rem;
+  margin-bottom: 0;
+
+  li {
+    position: relative;
+    line-height: 1.7em;
+
+    &+& {
+      margin-top: 1rem;
+    }
+  }
+}
+
+*[data-fancybox]:focus {
+  outline: 0;
+  box-shadow: none;
+}

@@ -1,0 +1,48 @@
+.demo-form-modal.modal.js-modal(data-modal-id="form-modal") 
+    .demo-form-modal-top    
+        .demo-form-modal-top-left 
+            h3.toptitle Demo Talep Formu
+            h6.title Formu Doldurun Sizi Arayalım
+        //- img(src="/assets/img/shortcut-img2.png" alt="").demo-form-modal-top-img
+        button.modal-close.js-close-modal 
+            svg.icon.icon-font
+                use(xlink:href="assets/icons/icons.svg#icon-close")
+    form(action="").demo-form-modal-form
+        .input-wrapper
+            label(for="name").input-title Ülke
+            .custom-select
+                select#employees(name="employees" required)
+                    option(value="" disabled selected) Ülke seçin
+                    option(value="tr") Türkiye
+                    option(value="hl") Hollanda
+                    option(value="us") Amerika
+        .input-wrapper
+            label(for="name").input-title Ad Soyad
+            input(type="text" id="name" name="name" placeholder="Adınız" required).input
+        .input-group
+            .input-wrapper
+                label(for="email").input-title E-posta
+                input(type="email" id="email" name="email" placeholder="E-Posta Adresiniz" required).input
+            .input-wrapper
+                label(for="phone").input-title Telefon
+                input(type="number" id="phone" name="phone" placeholder="Telefon Numaranız" required).input
+        .input-group
+            .input-wrapper
+                label(for="sirket").input-title Şirket
+                input(type="text" id="sirket" name="sirket" placeholder="Şirket İsminiz" required).input
+            .input-wrapper(style="width: 30%")
+                label(for="phone").input-title Çalışan Sayısı
+                .custom-select
+                    select#employees(name="employees" required)
+                        option(value="" disabled selected) Seçiniz
+                        option(value="1-10") 1-10
+                        option(value="11-50") 11-50
+                        option(value="51-200") 51-200
+                        option(value="200+") 200+
+        .input-wrapper.textarea
+            label(for="message").input-title Mesajınız
+            textarea(id="message" name="message" placeholder="Mesajınızı yazınız" required)
+        .btn.btn--black.js-close-this-modal(data-modal-id="form-modal") 
+            span.btn__text Gönder
+
+

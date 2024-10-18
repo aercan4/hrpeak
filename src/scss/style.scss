@@ -1,0 +1,81 @@
+@import "config/_mixins.scss";
+@import "config/_variable.scss";
+@import "config/_normalize.scss";
+@import "config/_config.scss";
+@import "config/_fonts.scss";
+@import "config/swiper-settings";
+
+@import "global/_global.scss";
+@import "helper/_utilities.scss";
+@import "helper/_wordpress.scss";
+
+@import "components/_title.scss";
+@import "components/_text.scss";
+@import "components/_toptitle.scss";
+@import "components/_button.scss";
+@import "components/_link.scss";
+@import "components/_section.scss";
+@import "components/_shortcut.scss";
+@import "components/_subpage.scss";
+@import "components/_box.scss";
+@import "components/_tab.scss";
+@import "components/_langs.scss";
+@import "components/_hero.scss";
+@import "components/_dropdown.scss";
+@import "components/_company-item.scss";
+@import "components/_shape.scss";
+@import "components/_badge.scss";
+@import "components/_timeline-item.scss";
+@import "components/_blog-item.scss";
+@import "components/_user.scss";
+@import "components/_challenge-card.scss";
+@import "components/_preference-item.scss";
+@import "components/_accordion.scss";
+@import "components/_pagination.scss";
+@import "components/_marquee-item.scss";
+@import "components/_modal.scss";
+@import "components/_questioning.scss";
+@import "components/_product-type.scss";
+@import "components/_assessment-card.scss";
+@import "components/_feature.scss";
+@import "components/_checklist.scss";
+@import "components/_info.scss";
+@import "components/_circle.scss";
+@import "components/_user-shape.scss";
+@import "components/_advantage-item.scss";
+@import "components/_reference-item.scss";
+@import "components/_count-item.scss";
+@import "components/_history-item.scss";
+@import "components/_why-use-item.scss";
+@import "components/_contact-item.scss";
+@import "components/_faq-section.scss";
+@import "components/_faq-item.scss";
+@import "components/_blog-card.scss";
+@import "components/_demo-form-modal.scss";
+@import "components/_demo-form-success-modal.scss";
+@import "components/_breadcrumb.scss";
+
+@import "components/form/switch.scss";
+@import "components/form/checkbox.scss";
+@import "components/form/select.scss";
+@import "components/form/input.scss";
+@import "components/_content.scss";
+@import "components/_social.scss";
+
+//@import "components/quick-contact";
+
+@import "global/_header.scss";
+
+@import "global/_footer.scss";
+
+@import "pages/index";
+@import "pages/references";
+@import "pages/product-detail";
+@import "pages/products";
+@import "pages/about";
+@import "pages/contact";
+@import "pages/faqs";
+@import "pages/blog";
+@import "pages/blog-detail";
+@import "pages/exam-info";
+@import "pages/pearson-form";

@@ -1,0 +1,26 @@
+.blog-item {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    .title {
+        font-weight: 400;
+    }
+    &-slider {
+        position: relative;
+        &-nav {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            transform: translateY(-10%);
+        }
+        &-wrapper {
+            .container {
+                // padding: 0 21rem;
+                max-width: 86rem;
+                @include bp(r-desktop-m) {
+
+                } 
+            }
+        }
+    }
+}

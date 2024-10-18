@@ -1,0 +1,74 @@
+extends blocks/layout
+block vars
+    - var index = true;
+    - var header = true;
+    - var footer = true;
+    - var shortcut = true;
+    - var shortcutTalentImg = true;
+
+block append head
+    title Blog Detail | Hr Peak
+    meta(name='description' content="One tool to manage contracts and your team")
+    // Facebook
+    meta(property='og:title' content='Hr Peak')
+    meta(property='og:description' content="One tool to manage contracts and your team")
+    meta(property='og:image' content='assets/img/thumb.jpg')
+    // Twitter
+    meta(property='twitter:url' content='#')
+    meta(property='twitter:title' content='Hr Peak')
+    meta(property='twitter:description' content="One tool to manage contracts and your team")
+    meta(property='og:image' content='assets/img/thumb.jpg')
+
+block content 
+    .subpage.blog-detail
+        .subpage-intro 
+            .container 
+                .hero
+                    h5.toptitle Kategori İsmi
+                    h1.title.title--xl.title--center.hero-title Sessiz İstifa Bir Fırsat Olabilir mi?
+                    span.blog-detail-date.fw-400 15 Haziran 2024 | 23:38
+             
+                    
+        .subpage-content
+            section.section.with-top-border.content-section-wrapper
+                .container.container--medium
+                    img(src="assets/img/blog-detail-img.png" alt="" class="blog-detail-img")
+                    .box
+                        .box-content
+                            p Çalışanlar arasında iş hayatından beklentilerinin azalması, kariyer hedeflerinin yerine sadece üzerine düşen işi yapacak kadar çalışmak, işyerinde başarılı olmaya dair duydukları motivasyonun yitirilmesi gibi örneklerle açıklanan sessiz istifa, bir tür yeni çalışma modeli olarak yaygınlaştığı takdirde, uzun vadede hem işveren hem de çalışanın kayba uğramasına yol açabilir ki, yapılan araştırmalar şimdilik dar bir kesimde ortaya çıkmış gibi görünse de şirketlerin sessiz istifayı görmezden gelmemesi gerektiğine dikkat çekecek nitelikte…
+                            h3 Sessiz İstifa Uzun Vadede İş Hayatını Nasıl Etkiler?
+                            p Şirket ve birim yöneticileri ile duygusal bağlarını koparmaya yönelen çalışanların, sessiz istifacı olarak çalışmaya devam etmesi, iş ve özel hayatın sınırlarının çizilmesi ve çalışanın emek, zaman ve değer terazisinde kendince bir adalet girişimi olarak yorumlandığında, çalışanlar açısından anlaşılır bir tavır, bir tür sessiz tepki olarak kabul edilebilir.
+
+                            p Çalışma koşullarının verimliliği açısından çalışanın memnuniyeti yeterince önemsenmediğinde ya da şirket içi açık iletişim gelişmemiş ve karşılıklı geri bildirim kültürü oluşmamışsa, iş hayatını devam ettirebilmek adına çalışan, bazen farkında bile olmadan, sessiz istifaya geçebilir.
+
+                            p Peki sessiz istifa uzun vadede iş hayatını nasıl etkiler? Tüm dünyada “haftada 4 gün çalışma” gibi konular tartışılmaya başlanmışken, şirketlerin sessiz istifaya bakış açısı ve/veya sessiz istifa içinde olan bir çalışana karşı yaklaşımı nasıl olmalıdır?
+                            h3 Sessiz İstifa İş Hayatına Neyi Göstermek İstiyor?
+                            p Sessiz istifa ile birlikte gündeme gelen çalışanın öz değeri, özel hayat ve iş dengesi, iş hayatında açık iletişim gibi konular, şirketlerin yeni çağa uyum sağlamak ve vizyonlarını genişletmek için kullanabileceği bir fırsat gibi de görünüyor ve insan kaynakları yönetiminde böyle bir yaklaşımı benimseyen büyük şirketler iş hayatında yeni trendlere öncülük etmeye hazırlanıyorlar.
+
+                            p Dolayısıyla sessiz istifayı görmezden gelmek veya geçici çözümler aramak yerine, iş hayatında yeniden düzenlenmesi gereken bazı önemli konuları gündeme almak ve gerekli değişimleri gerçekleştirmek adına bir fırsat olarak değerlendirmek gerektiğini söyleyebiliriz. Çünkü olumlu ve olumsuz tüm çıktıları ile sessiz istifa, çalışma hayatında bazı şeylerin artık güncellenmesi gerektiğini işaret ediyor gibi görünüyor
+                            h3 Sessiz İstifa Nedir?
+                            p Sessiz istifa, çalışma koşullarından memnun olmadığı halde işe gelip gitmeye devam eden çalışanın sadece görev tanımı ve iş planı kapsamındaki işleri yaptığı ve görevlerini zamanında yerine getirdiği fakat fazlası için sorumluluk almaktan ve işi için ekstra zaman harcamaktan kaçındığı çalışma durumudur.
+
+                            p Sessiz istifa yapan bir çalışan fiilen istifa etmez ama şirket, marka, iş, işyeri, yöneticiler veya patronu ile kurduğu ilişkide, çalışma hayatını sürdürebilmek adına, kendince bazı sınırlar uygular.
+                        - var sharer = true;
+                        - var socialTitle = 'İçeriğimizi sosyal medyada paylaşabilirsiniz';
+                        include blocks/components/social
+                    .section-divider-shape   
+                        img(src="assets/img/basic-logo.svg")
+            section.section
+                .container.container--medium
+                    .similar-blogs.swiper-container.visible-active
+                        .similar-blogs-title 
+                            h2.title.title--lmd.fw-400 Benzer İçeriklerimiz
+                        .swiper-wrapper.similar-blogs-wrapper
+                            .swiper-slide 
+                                include blocks/components/blog-card                  
+                            .swiper-slide 
+                                include blocks/components/blog-card                    
+                            .swiper-slide 
+                                include blocks/components/blog-card                    
+                            .swiper-slide 
+                                include blocks/components/blog-card                    
+                            .swiper-slide 
+                                include blocks/components/blog-card                    
+

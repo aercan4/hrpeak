@@ -1,0 +1,12 @@
+.faq-section(class=exam ? "exam" : "") 
+    .faq-section-left 
+        h2.title.title--lg.fw-400 #{faqSectionTitle}
+        p.text #{faqSectionDescription}
+        if exam 
+            a(href="faqs.html").btn.btn--black Tümünü Gör
+    .faq-section-wrapper 
+        include faq-item
+        include faq-item
+        include faq-item
+        include faq-item
+        include faq-item

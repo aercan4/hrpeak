@@ -1,0 +1,148 @@
+.assessment-card {
+  background: rgba($c-white, 0.5);
+  border-radius: 2.6rem;
+  border: 1px solid $c-border;
+
+
+  .product-type {
+    &-icon {
+      height: 4.1rem;
+      @include bp(mobile) {
+        height: 3.5rem;
+      }
+    }
+
+    &-title {
+      font-size: 1.9rem;
+      @include bp(mobile) {
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  &-img {
+    width: 33rem;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    @include bp(mobile) {
+      width: 24rem;
+    }
+    img {
+      object-fit: contain;
+      transform: translateY(10rem);
+      height: 100%;
+      width: 100%;
+      margin-top: -5rem;
+      @include bp(mobile) {
+        transform: translateY(8rem);
+      }
+    }
+  }
+
+  &-top {
+    overflow: hidden;
+    position: relative;
+
+    border-bottom: 1px solid $c-border;
+    background: radial-gradient(44.05% 92.99% at 52.63% 100%,
+        #edeff9 58.78%,
+        rgba(237, 239, 249, 0) 100%);
+
+    .feature {
+      position: absolute;
+      left: -10rem;
+      top: 16rem;
+      @include bp(mobile) {
+        height: 3.4rem;
+        left: -5rem;
+        top: 12rem;
+        gap: 1rem;
+        padding: 0 .7rem;
+        padding-right: 1.2rem;
+        &__title {
+          font-size: .8rem;
+        }
+        &__icon {
+          height: 2rem;
+          width: 2rem;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  &-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 3.2rem;
+    margin-top: 4rem;
+    @include bp(mobile) {
+      margin-top: 2rem;
+    }
+  }
+
+  &-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+
+    @include bp(tablet) {
+      grid-template-columns: repeat(1, 1fr);
+
+    }
+  }
+
+  &-content {
+    padding: 3.6rem;
+    @include bp(mobile) {
+      padding: 2rem;
+      .text {
+        display: none;
+      }
+    }
+  }
+
+  &--simple {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid $c-border;
+
+
+
+    .product-type {
+      margin-bottom: 0;
+
+      &-icon {
+        display: none;
+      }
+    }
+
+    .assessment-card-top {
+      border: 1px solid $c-border;
+      border-radius: 1.8rem;
+      background: radial-gradient(108.18% 192.53% at 27.39% 197.88%, #EDEFF9 58.78%, rgba(237, 239, 249, 0.00) 100%), #FFF;
+    }
+
+    .assessment-card-links {
+      display: none;
+    }
+
+    .text {
+      display: none;
+    }
+
+    .assessment-card-content {
+      padding: 3rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}

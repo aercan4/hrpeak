@@ -1,0 +1,125 @@
+.product-detail {
+    overflow: visible;
+
+    .subpage-intro {
+        overflow: hidden;
+        background: radial-gradient(100% 100% at 50% 0%, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 100%),
+            linear-gradient(0deg, #f0f1fa 0%, #f0f1fa 100%), linear-gradient(0deg, #009ee2 0%, #009ee2 100%), #edeff9;
+        padding-top: calc(var(--header-height) + 4rem);
+
+        .bg-grid {
+            top: calc(var(--header-height) + 15rem);
+        }
+
+        .circle-wrapper {
+            .circle {
+                &:first-child {
+                    bottom: 11.5rem;
+                    left: 22.7rem;
+                }
+
+                &:nth-child(2) {
+                    top: 38rem;
+                    left: 43rem;
+                }
+
+                &:nth-child(3) {
+                    right: 37rem;
+                    bottom: 11.8rem;
+                }
+
+                &:nth-child(4) {
+                    right: 22rem;
+                    top: 34rem;
+                }
+            }
+        }
+
+        &-feature {
+            .feature {
+                position: absolute;
+                right: 18rem;
+                bottom: 20rem;
+                z-index: 2;
+            }
+        }
+
+        &-user-shape {
+            .user-shape {
+                left: 25rem;
+                top: 35rem;
+            }
+        }
+
+    }
+
+    .hero {
+        .title {
+            margin-top: 5rem;
+        }
+
+        &-img {
+            border: 0;
+
+            &-wrapper {
+                max-width: 33rem;
+                margin-top: 4rem;
+                margin-bottom: -17.5rem;
+
+                .feature-wrapper {
+                    .feature {
+                        &:first-child {
+                            bottom: 27rem;
+                            left: -6rem;
+                        }
+                    }
+                }
+
+                .user-shape-wrapper {
+                    .user-shape {
+                        &:first-child {
+                            left: unset;
+                            right: 0;
+                            top: 7rem;
+                            transform: translateX(50%);
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    .tab-link-wrapper {
+        position: sticky;
+        background: #fff;
+        top: 0;
+        z-index: 1;
+    }
+
+    .tab {
+        &::before {
+            content: "";
+            opacity: 0.85;
+            background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
+            height: 65rem;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+        }
+    }
+
+    .animated-tabs {
+        gap: 3rem;
+    }
+
+    .section {
+        padding-top: 8rem;
+
+        &.with-top-border {
+            margin-top: 8rem;
+        }
+    }
+}

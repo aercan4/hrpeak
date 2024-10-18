@@ -1,0 +1,37 @@
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+
+    &-item {
+        color: rgba($color: #59595b, $alpha: 0.8);
+        font-weight: 400;
+        font-size: 1.5rem;
+        transition: all .3s ease-in-out;
+
+        &.active {
+            color: rgba($c-black, .8);
+            font-weight: 500;
+
+            &:hover {
+                color: $c-black;
+            }
+        }
+
+        &:hover {
+            color: rgba($c-black, .8);
+        }
+    }
+
+    &-arrow {
+        width: 2rem;
+        height: 2rem;
+        border: 1px solid $c-border;
+        background: $c-white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: .8rem;
+    }
+}

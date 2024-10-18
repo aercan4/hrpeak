@@ -1,0 +1,47 @@
+.preference-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.8rem;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    &-title {
+        color: rgba($c-black, 0.6);
+        font-size: 1.5rem;
+        opacity: 0.6;
+        letter-spacing: $letter-spacing;
+        @include bp(mobile) {
+            font-size: 1.3rem;
+        }
+    }
+    &-text {
+        font-size: 1.5rem;
+        color: $c-black;
+        letter-spacing: $letter-spacing;
+        text-align: right;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        @include bp(mobile) {
+            font-size: 1.3rem;
+        }
+        .text-icon {
+            height: 1.6rem;
+            width: 1.6rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: $c-green;
+            color: $c-white;
+            font-size: .8rem;
+            border-radius: 50%;
+        }
+        &.red {
+            color: $c-red-light;
+            .text-icon {
+                background: $c-red-light;
+            }
+        }
+    }
+}

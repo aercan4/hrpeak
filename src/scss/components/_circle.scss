@@ -1,0 +1,99 @@
+.circle {
+    position: absolute;
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 2.8rem;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.80) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+
+    &-dot {
+        width: .8rem;
+        height: .8rem;
+        border-radius: 50%;
+        border: 1px solid #FFFAFA;
+        background: linear-gradient(89deg, #08A1E3 0.29%, #7BC3E3 99.18%), #FFF;
+        box-shadow: 0px 2.333px 6.417px 0px rgba(171, 218, 252, 0.35);
+        animation: circle 5s infinite;
+    }
+
+    &.animation-2 {
+        .circle-dot {
+            animation: circle-2 6s infinite;
+        }
+    }
+
+    &.animation-3 {
+        .circle-dot {
+            animation: circle-3 5s infinite;
+        }
+    }
+
+    &.animation-4 {
+        .circle-dot {
+            animation: circle-4 4s infinite;
+        }
+    }
+
+
+
+}
+
+
+@keyframes circle {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes circle-2 {
+    0% {
+        transform: scale(.5);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(.5);
+    }
+}
+
+@keyframes circle-3 {
+    0% {
+        transform: scale(.8);
+    }
+
+    50% {
+        transform: scale(1.6);
+    }
+
+    100% {
+        transform: scale(.8);
+    }
+}
+
+@keyframes circle-4 {
+    0% {
+        transform: scale(.2);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(.2);
+    }
+}

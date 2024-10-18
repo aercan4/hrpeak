@@ -1,0 +1,16 @@
+.products {
+    & ~ .shortcut-wrapper {
+        padding-top: 10rem;
+    }
+    .subpage-intro {
+        background: linear-gradient(180deg, rgba(250, 250, 250, 0.00) 18.78%, #FAFAFA 100%), linear-gradient(0deg, #F0F1FA 0%, #F0F1FA 100%), linear-gradient(0deg, #009EE2 0%, #009EE2 100%), #EDEFF9;
+        padding-bottom: 19rem;
+    }
+    .hero {
+    }
+
+    .subpage-content {
+        margin-top: -14rem;
+    }
+
+}

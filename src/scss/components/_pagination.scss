@@ -1,0 +1,35 @@
+.pagination {
+    margin: 10rem auto 0;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    &-item {
+        width: 4rem;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 1rem;
+        border: 1px solid $c-border;
+        background: $c-white;
+        transition: all 0.3s;
+        color: #333;
+        font-size: 1.5rem;
+        font-weight: 400;
+
+        &:first-child {
+            margin-right: 4.2rem;
+        }
+
+        &:last-child {
+            margin-left: 4.2rem;
+        }
+
+        &:hover, &.active {
+            background: $c-black;
+            color: $c-white;
+            font-weight: 600;
+        }
+    }
+}

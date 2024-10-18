@@ -1,0 +1,67 @@
+.text {
+    font-size: var(--font-size-text);
+    line-height: 1.7em;
+    font-weight: 300;
+    color: $c-text;
+    letter-spacing: -0.16px;
+  
+    strong {
+      font-weight: 500;
+      color: $c-black;
+    }
+
+    &--lg {
+      font-size: 1.8rem;
+      @include bp(mobile) {
+        font-size: 1.6rem;
+      }
+    }
+    &--sm {
+      font-size: 1.5rem;
+    }
+    &--xsm {
+      font-size: 1.4rem;
+    }
+  
+    &--black {
+      color: $c-black !important;
+    }
+  
+    &--x-light {
+      color: rgba($c-black, 0.4);
+    }
+    &--light {
+      color: rgba($c-black, 0.6);
+    }
+    &--medium-light {
+      color: rgba($c-black, 0.7);
+    }
+  
+    &--white {
+      color: #fff;
+    }
+  
+    &--light-white {
+      color: rgba(#fff, 0.6);
+    }
+    &--medium-white {
+      color: rgba(#fff, 0.75);
+    }
+   
+    
+    &--dark-gray {
+      color: $c-dark-gray;
+    }
+    &--gray {
+      color: $c-light-gray;
+    }
+    &--light-gray {
+      color: rgba($c-dark-gray, 0.8);
+    }
+    &--blue {
+      color: $c-blue;
+    }
+    &--center {
+      text-align: center;
+    }
+  }

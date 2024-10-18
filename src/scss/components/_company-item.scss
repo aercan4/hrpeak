@@ -1,0 +1,11 @@
+.company-item {
+    display: flex;
+    align-items: center;
+    filter: grayscale(1);
+    opacity: 0.5;
+    img {
+        width: 17rem;
+        height: 4rem;
+        object-fit: contain;
+    }
+}

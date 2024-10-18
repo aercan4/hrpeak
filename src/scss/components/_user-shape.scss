@@ -1,0 +1,8 @@
+.user-shape {
+    position: absolute;
+    height: 7.8rem;
+    object-fit: contain;
+    @include bp(tablet) {
+        height: 5.8rem;
+    }
+}

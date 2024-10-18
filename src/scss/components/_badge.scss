@@ -1,0 +1,25 @@
+.badge {
+  padding: 0 1.4rem;
+  display: flex;
+  align-items: center;
+  width: max-content;
+  border-radius: 0.8rem;
+  font-weight: 500;
+  font-size: 1.5rem;
+  height: 3.9rem;
+  letter-spacing: $letter-spacing;
+  &--sm {
+    height: 2.8rem;
+    font-size: 1rem;
+    padding: 0 .9rem;
+    border-radius: .6rem;
+  }
+  &--green {
+    background: rgba(73, 185, 137, 0.2);
+    color: $c-dark-green;
+  }
+  &--blue {
+    background: rgba(#10146c, 0.25);
+    color: $c-white;
+  }
+}

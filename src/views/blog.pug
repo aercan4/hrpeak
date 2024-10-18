@@ -1,0 +1,68 @@
+extends blocks/layout
+block vars
+    - var index = true;
+    - var header = true;
+    - var footer = true;
+    - var shortcut = true;
+    - var shortcutTalentImg = true;
+
+block append head
+    title Blog | Hr Peak
+    meta(name='description' content="One tool to manage contracts and your team")
+    // Facebook
+    meta(property='og:title' content='Hr Peak')
+    meta(property='og:description' content="One tool to manage contracts and your team")
+    meta(property='og:image' content='assets/img/thumb.jpg')
+    // Twitter
+    meta(property='twitter:url' content='#')
+    meta(property='twitter:title' content='Hr Peak')
+    meta(property='twitter:description' content="One tool to manage contracts and your team")
+    meta(property='og:image' content='assets/img/thumb.jpg')
+
+block content 
+    .subpage.blog.faqs
+        .subpage-intro 
+            .container 
+                .hero
+                    h5.toptitle Products
+                    h1.title.title--xl.title--center.hero-title Lorem ipsum dolor sit amet
+        .subpage-content 
+            section.tab
+                .tab-link-wrapper.scroll-hidden
+                    .section-divider-shape   
+                        img(src="assets/img/basic-logo.svg")
+                    .animated-tabs.scroll-hidden.animated-tabs--badge
+                        .animated-tabs-item.js-tab-item.js-filter-all(data-filter="all" data-scroll="true") 
+
+                            span Tümünü Gör
+                        .animated-tabs-item.js-tab-item(data-filter="tecrube" data-scroll="true") 
+
+                            span Tecrübe
+                        .animated-tabs-item.js-tab-item(data-filter="lokasyon" data-scroll="true") 
+
+                            span Lokasyon
+                        .animated-tabs-item.js-tab-item(data-filter="calismaSekli" data-scroll="true") 
+
+                            span Çalışma Şekli
+                        .animated-tabs-item.js-tab-item(data-filter="egitim" data-scroll="true") 
+
+                            span Eğitim
+                        .animated-tabs-item.js-tab-item(data-filter="tecrube" data-scroll="true") 
+
+                            span Tecrübe
+                        .animated-tabs-item.js-tab-item(data-filter="egitim" data-scroll="true") 
+
+                            span Eğitim
+                        .ghost
+
+
+                .tab-content-wrapper
+                    .tab-content
+                        .blog-tab-content.container
+                            - var blogCardClass = 'filtered-item tecrube'
+                            include blocks/components/blog-card
+                            - var blogCardClass = 'filtered-item lokasyon'
+                            include blocks/components/blog-card
+                            - var blogCardClass = 'filtered-item tecrube'
+                            include blocks/components/blog-card
+                        include blocks/components/pagination

@@ -1,0 +1,51 @@
+.questioning {
+    display: flex;
+    justify-content: space-between;
+    background: rgba(#EDEDF1, .6);
+    padding: 2rem 2.7rem;
+    border-radius: 1.8rem;
+    width: 100%;
+
+    @include bp(mobile) {
+        flex-direction: column;
+        gap: 3rem;
+        padding: 2rem var(--container-pusher);
+        border-radius: 1.4rem;
+    }
+
+    &-right {
+        flex: 0 0 52.3%;
+        max-width: 52.3%;
+
+        @include bp(mobile) {
+            flex: unset;
+            max-width: unset;
+        }
+
+        .input {
+            background: #fff;
+        }
+    }
+
+    &-left {
+        flex: 0 0 40%;
+        max-width: 40%;
+
+        @include bp(mobile) {
+            flex: unset;
+            max-width: unset;
+        }
+    }
+
+    .title {
+        font-size: 1.7rem;
+    }
+
+    .text {
+        font-size: 1.4rem;
+        margin-top: .5rem;
+        @include bp(mobile) {
+            font-size: 1.3rem;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.social-wrapper(class=sharer && 'social-wrapper--sharer')
+    if socialTitle
+        .social__title.title.title--xs #{socialTitle}
+    .social
+        if !sharer
+            a.social__item.facebook(href='#0')
+                svg.icon.icon-font
+                    use(xlink:href='assets/icons/icons.svg#icon-instagram')
+        a.social__item.twitter(href='#0')
+            svg.icon.icon-font
+                use(xlink:href='assets/icons/icons.svg#icon-twitter')
+        a.social__item.twitter(href='#0')
+            svg.icon.icon-font
+                use(xlink:href='assets/icons/icons.svg#icon-facebook')
+        a.social__item.linkedin(href='#0')
+            svg.icon.icon-font
+                use(xlink:href='assets/icons/icons.svg#icon-linkedin')
+
+
+

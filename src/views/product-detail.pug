@@ -1,0 +1,243 @@
+extends blocks/layout
+block vars
+    - var index = true;
+    - var header = true;
+    - var footer = true;
+    - var shortcut = true;
+    - var challengeListing = true;
+
+block append head
+    title Product Detail | Hr Peak
+    meta(name='description' content="One tool to manage contracts and your team")
+    // Facebook
+    meta(property='og:title' content='Hr Peak')
+    meta(property='og:description' content="One tool to manage contracts and your team")
+    meta(property='og:image' content='assets/img/thumb.jpg')
+    // Twitter
+    meta(property='twitter:url' content='#')
+    meta(property='twitter:title' content='Hr Peak')
+    meta(property='twitter:description' content="One tool to manage contracts and your team")
+    meta(property='og:image' content='assets/img/thumb.jpg')
+
+block content
+    .subpage.product-detail
+
+        .subpage-intro 
+            .container.container--small
+                .hero
+                    include blocks/components/breadcrumb
+                    h1.title.title--xxl.title--center.hero-title Online Role Play
+                    p.text.text--center.text--lg.mt-1 Adaylarınızın Bilgi, Beceri ve Yetkinliklerini Aynı Anda Değerlendirin!
+                    .btn.btn--black.hero-btn
+                        span.btn__text Demo & Offer
+                    .hero-img-wrapper
+                        img(src="assets/img/box.png").hero-img
+                        .feature-wrapper
+                            include blocks/components/feature
+                        .user-shape-wrapper
+                            img(src="assets/img/user-shape.png").user-shape
+            .circle-wrapper
+                include blocks/components/circle
+                - var circleCustomClass = "animation-2"
+
+                include blocks/components/circle
+                - var circleCustomClass = "animation-3"
+
+                include blocks/components/circle
+                - var circleCustomClass = "animation-4"
+
+
+                include blocks/components/circle
+                - var circleCustomClass = "animation-2"
+            .subpage-intro-feature
+                include blocks/components/feature
+
+            .subpage-intro-user-shape
+                img(src="assets/img/user-shape.png").user-shape
+            
+
+
+                    
+            img(src="assets/img/hero-grid.svg").bg-grid
+
+
+        .subpage-content   
+            section.tab
+                .tab-link-wrapper.scroll-hidden
+                    .animated-tabs.scroll-hidden
+                        .animated-tabs-item.js-scroll-item.active(data-target="nedir") 
+                            span Nedir 
+                        .animated-tabs-item.js-scroll-item(data-target="nedenKullanilir") 
+                            span Neden Kullanılır 
+                        .animated-tabs-item.js-scroll-item(data-target="ozellikleri") 
+                            span Özellikleri 
+                        .animated-tabs-item.js-scroll-item(data-target="nasilKullanilir") 
+                            span Nasıl Kullanılır
+
+                        .animated-tabs-line
+                        .ghost
+
+
+                .tab-content-wrapper
+                    .tab-content.wrapper
+                        section#nedir.section.section--column.container.container--small
+
+
+                            h5.toptitle.tab-content-section-toptitle Nedir
+                            .section-content
+                                .tab-content-section 
+                                    .tab-content-section-left
+                                        h3.title.title.title--lmd.tab-content-section-title We make it effortlessly to track all user analytics
+
+                                    .tab-content-section-right
+                                        .content    
+                                            p Birden çok aracı bir arada sunan sistem sayesinde daha fazla adayı daha kısa sürede ve objektif şekilde değerlendirebilir ve tüm insan kaynakları süreçlerinizde zaman ve maliyet tasarrufu sağlayabilirsiniz.
+                                            p Objektif şekilde değerlendirebilir ve tüm insan kaynakları süreçlerinizde zaman ve maliyet tasarrufu sağlayabilirsiniz.
+                                .box.box--light-purple
+                                    h3.title.box-title Quick Facts
+                                    ul.checklist
+                                        li East-to-use Interface
+                                        li Personality Test Integration
+                                        li Question Library
+                                        li Flexible and Speed
+                                        li 24/7 Live Support
+
+                        section#nedenKullanilir.section.section--column.with-top-border
+                            .container.container--small
+                                h5.toptitle.tab-content-section-toptitle Neden Kullanılır
+                                .section-content
+                                    .tab-content-section 
+                                        .tab-content-section-left
+                                            h3.title.title.title--lmd.tab-content-section-title We make it effortlessly to track all user analytics
+
+                                        .tab-content-section-right
+                                            .content    
+                                                p Birden çok aracı bir arada sunan sistem sayesinde daha fazla adayı daha kısa sürede ve objektif şekilde değerlendirebilir ve tüm insan kaynakları süreçlerinizde zaman ve maliyet tasarrufu sağlayabilirsiniz.
+                                                p Objektif şekilde değerlendirebilir ve tüm insan kaynakları süreçlerinizde zaman ve maliyet tasarrufu sağlayabilirsiniz.
+                                    .info-grid
+                                        - var infoTitle = "Hızlandırılmış İK"
+                                        - var infoText = "Combine multiple repots into a single beautiful dashboard."
+                                        include blocks/components/info
+                                        - var infoTitle = "Sana Uygun Challengelar"
+                                        - var infoText = "Combine multiple repots into a single beautiful dashboard."
+                                        include blocks/components/info
+                                        - var infoTitle = "Sana Uygun Challengelar"
+                                        - var infoText = "Combine multiple repots into a single beautiful dashboard."
+                                        include blocks/components/info
+                                        - var infoTitle = "Sana Uygun Challengelar"
+                                        - var infoText = "Combine multiple repots into a single beautiful dashboard."
+                                        include blocks/components/info
+                                        - var infoTitle = "Sana Uygun Challengelar"
+                                        - var infoText = "Combine multiple repots into a single beautiful dashboard."
+                                        include blocks/components/info
+                                        - var infoTitle = "Sana Uygun Challengelar"
+                                        - var infoText = "Combine multiple repots into a single beautiful dashboard."
+                                        include blocks/components/info
+
+                        section#nasilKullanilir.section.with-top-border
+                            .container.container--small
+                                h5.toptitle.tab-content-section-toptitle Nasıl Kullanılır
+                                h3.title.title.title--lmd.tab-content-section-title We make it effortlessly to track all user analytics
+                                .section-content.why-section-wrapper
+                                    - var title = "Birinci Adım"
+                                    - var icon = "assets/img/integrated.svg"
+                                    - var className = "why"
+                                    - var text = "Kurumların İK profesyonelleri, soru bankasından seçilen ya da kendi hazırladıkları soruları sisteme girdikten sonra video mülakat uygulamak istediği adayları HRWin üzerinden davet eder."
+                                    include blocks/components/advantage-item   
+                                    - var title = "İkinci Adım"
+                                    - var icon = "assets/img/integrated.svg"
+                                    - var text = "Kamera ve test aşamasından sonra sınava başlar. Süreç esnasında 7/24 canlı desteğe başvurabilir; bağlantı kopması, sayfa kapanması gibi teknik sorunlardan etkilenmez."
+                                    include blocks/components/advantage-item   
+                                    - var title = "Üçüncü Adım"
+                                    - var icon = "assets/img/integrated.svg"
+                                    - var text = "Aday sınavı bitir butonuna bastığında sonuçlar üretilir ve sınav sonuçları yönetici panelinden kurumlar tarafından görüntülenebilir. Adaylar kendi sonuçlarına erişemez."
+                                    include blocks/components/advantage-item   
+
+                                    //- .section-content-left
+                                    //-     h3.title.title.title--lmd.tab-content-section-title We make it effortlessly to track all user analytics
+                                    //-     - var infoCustomClass = "info--row"
+                                    //-     - var infoImg = true
+                                    //-     - var infoTitle = "Online Yönetim ve"
+                                    //-     - var infoTitleBottom = "Sonuçlandırma"
+                                    //-     - var infoText = "Presentation online olarak uygulanır ve sistem üzerinden değerlendirici tarafından yönetilebilir, değerlendirilebilir ve sonuçlandırılabilir."
+
+                                    //-     include blocks/components/info
+                                    //-     - var infoTitle = "Kamera ile Güvenlik"
+                                    //-     - var infoTitleBottom = "Kontrolü"
+
+                                    //-     - var infoText = "Belli aralıklarda fotoğraf ve video çekimi yapılarak güvenlik kontrolü sağlanabilir."
+                                    //-     include blocks/components/info
+                                    //-     - var infoTitle = "KVKK"
+                                    //-     - var infoTitleBottom = "Uyumlu"
+
+                                    //-     - var infoText = "Adaylarınıza ait kişisel bilgiler ve Role Play egzersizinin hazırlanma aşamasında çekilen fotoğraflar sistemde GDPR/KVKK uyumlu olarak saklanır."
+                                    //-     include blocks/components/info
+                                    //-     - var infoTitle = "Aday"
+                                    //-     - var infoTitleBottom = "Canlı Desteği"
+                                    //-     - var infoText = "Aday canlı desteği ile süreç boyunca adaylarınıza anında teknik destek sağlanabilir."
+                                    //-     include blocks/components/info  
+                                    //- .section-content-right 
+                                    //-     .box-wrapper
+                                    //-         .box.box--purple.box--feature
+                                    //-             img(src="assets/img/box.png").box-main-img
+                                    //-             include blocks/components/feature
+                                    //-             include blocks/components/feature
+
+
+
+            section.section.others-slider-wrapper.with-top-border
+                .container 
+                    .section-head
+                        .section-head-left
+                            h3.title.title--lmd.section-head-title Other 
+                                span.fw-500 Online Assessment 
+                                | products
+                        .section-head-right
+                            .swiper-nav.swiper-arrows
+                                button.btn.nav-prev.other-slider-prev
+                                    span.btn__icon.icon-font
+                                        svg.icon.icon-font
+                                            use(xlink:href='assets/icons/icons.svg#icon-angle-left')
+                                button.btn.nav-next.other-slider-next
+                                    span.btn__icon.icon-font
+                                        svg.icon.icon-font
+                                            use(xlink:href='assets/icons/icons.svg#icon-angle-right')
+
+
+
+                .container
+                    .other-slider.swiper-container.visible-active
+                        .swiper-wrapper
+                            .swiper-slide 
+                                - var assessmentCardClass = 'assessment-card--simple'
+                                - var simpleCard = true;
+                                include blocks/components/assessment-card
+                            .swiper-slide
+                                - var assessmentCardClass = 'assessment-card--simple'
+                                - var simpleCard = true;
+                                include blocks/components/assessment-card
+                            .swiper-slide
+                                - var assessmentCardClass = 'assessment-card--simple'
+                                - var simpleCard = true;
+                                include blocks/components/assessment-card
+                            .swiper-slide
+                                - var assessmentCardClass = 'assessment-card--simple'
+                                - var simpleCard = true;
+                                include blocks/components/assessment-card
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

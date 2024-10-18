@@ -1,0 +1,104 @@
+extends blocks/layout
+block vars
+    - var index = true;
+    - var header = true;
+    - var footer = true;
+    - var shortcut = true;
+    - var shortcutTalentImg = true;
+
+block append head
+    title Products | Hr Peak
+    meta(name='description', content="One tool to manage contracts and your team")
+    // Facebook
+    meta(property='og:title' content='Hr Peak')
+    meta(property='og:description' content="One tool to manage contracts and your team")
+    meta(property='og:image' content='assets/img/thumb.jpg')
+    // Twitter
+    meta(property='twitter:url' content='#')
+    meta(property='twitter:title' content='Hr Peak')
+    meta(property='twitter:description' content="One tool to manage contracts and your team")
+    meta(property='og:image' content='assets/img/thumb.jpg')
+    
+block content
+    .subpage.products
+        
+        .subpage-intro 
+            .container 
+                .hero
+                    h5.toptitle Products
+                    h1.title.title--xxl.title--center.hero-title Assessment Center Modules
+                    
+        
+        
+        .subpage-content   
+            .tab
+                .tab-link-wrapper.scroll-hidden
+                    .animated-tabs.scroll-hidden
+                        .animated-tabs-item.js-tab-item.active(data-filter="onlineAssessment" data-scroll="true") 
+                            .animated-tabs-item-icon
+                                svg.icon.icon-font
+                                    use(xlink:href='assets/icons/icons.svg#icon-virtual')
+                            span Online 
+                                br
+                                | Assesment Center
+                        .animated-tabs-item.js-tab-item(data-filter="virtualAssessment" data-scroll="true") 
+                            .animated-tabs-item-icon
+                                svg.icon.icon-font
+                                    use(xlink:href='assets/icons/icons.svg#icon-virtual')
+                            span Virtual 
+                                br
+                                | Assessment Center
+                        .animated-tabs-item.js-tab-item(data-filter="gamificationService" data-scroll="true") 
+                            .animated-tabs-item-icon
+                                svg.icon.icon-font
+                                    use(xlink:href='assets/icons/icons.svg#icon-virtual')
+                            span Gamification 
+                                br
+                                | Services
+                        .animated-tabs-item.js-tab-item(data-filter="basvuruYonetim" data-scroll="true") 
+                            .animated-tabs-item-icon
+                                svg.icon.icon-font
+                                    use(xlink:href='assets/icons/icons.svg#icon-virtual')
+                            span Başvuru Yönetim 
+                                br 
+                                | Modülü
+                        
+                        .animated-tabs-line
+                        .ghost
+                
+                
+                .tab-content-wrapper
+                    .container
+                        .tab-content
+                            .filtered-item.active.onlineAssessment
+                                section.section.section--column
+                                    .section-content
+                                        .tab-content-section 
+                                            .tab-content-section-left
+                                                h3.title.title.title--lmd.tab-content-section-title We make it effortlessly to track all user analytics
+                                                .btn.btn--black.mt-4
+                                                    span.btn__text Demo & Offer
+                                            .tab-content-section-right
+                                                .content    
+                                                    p Birden çok aracı bir arada sunan sistem sayesinde daha fazla adayı daha kısa sürede ve objektif şekilde değerlendirebilir ve tüm insan kaynakları süreçlerinizde zaman ve maliyet tasarrufu sağlayabilirsiniz.
+                                                    p Objektif şekilde değerlendirebilir ve tüm insan kaynakları süreçlerinizde zaman ve maliyet tasarrufu sağlayabilirsiniz.
+                                        
+                                        .assessment-card-grid
+                                            - var assessmentCardClass = 'assessment-card--simple'
+                                            - var simpleCard = true;
+                                            include blocks/components/assessment-card
+                                            include blocks/components/assessment-card
+                                            include blocks/components/assessment-card
+                                            include blocks/components/assessment-card
+                                            include blocks/components/assessment-card
+                                            include blocks/components/assessment-card
+
+                            
+                            
+         
+
+
+
+
+
+

@@ -1,0 +1,88 @@
+extends blocks/layout
+block vars
+    - var index = true;
+    - var header = true;
+    - var footer = true;
+    - var shortcut = true;
+    - var challengeListing = true;
+
+block append head
+    title Sınav Bilgilendirme | Hr Peak
+    meta(name='description' content="One tool to manage contracts and your team")
+    // Facebook
+    meta(property='og:title' content='Hr Peak')
+    meta(property='og:description' content="One tool to manage contracts and your team")
+    meta(property='og:image' content='assets/img/thumb.jpg')
+    // Twitter
+    meta(property='twitter:url' content='#')
+    meta(property='twitter:title' content='Hr Peak')
+    meta(property='twitter:description' content="One tool to manage contracts and your team")
+    meta(property='og:image' content='assets/img/thumb.jpg')
+
+block content
+    .subpage.product-detail.exam-info.pearson-form
+
+        .subpage-intro 
+            .container.container--small
+                .hero
+                    h5.toptitle Partnerships
+                    h1.title.title--xl.title--center.hero-title Çalışanlarınızın dil becerilerini geliştirin ve iş performansını artırın
+                    .hero-img-wrapper
+                        img(src="assets/img/pearson-form.png").hero-img
+            img(src="assets/img/hero-grid.svg").bg-grid
+
+
+        .subpage-content   
+            .pearson-form-box
+                .pearson-form-box-top 
+                    .pearson-form-box-top-head 
+                        img(src="assets/img/mondly-logo.png" alt="")
+                        svg.icon.icon-font
+                            use(xlink:href="assets/icons/icons.svg#icon-close")
+                        img(src="assets/img/logo.svg" alt="")
+                    .pearson-form-box-top-content
+                        p Mondly by Pearson, dünya çapında 125 milyondan fazla kullanıcıya sahip olan ve Pearson’ın, dil becerilerinin geliştirilmesi için işletmelere sunduğu ödüllü bir dil öğrenme uygulamasıdır. 
+                        p Çalışanlarınızın dil ve iletişim becerilerini eğlenceli ve verimli bir şekilde geliştirmek için formu doldurarak HR Peak ayrıcalıklarıyla Mondly by Pearson demo fırsatı yakalayın.
+                form(action="").pearson-form-box-form
+                    .input-wrapper
+                        label(for="name").input-title Ad Soyad
+                        input(type="text" id="name" name="name" placeholder="Adınız" required).input
+                    .input-group
+                        .input-wrapper
+                            label(for="name").input-title Ülke
+                            .custom-select
+                                select#employees(name="employees" required)
+                                    option(value="" disabled selected) Ülke seçin
+                                    option(value="tr") Türkiye
+                                    option(value="hl") Hollanda
+                                    option(value="us") Amerika
+                        .input-wrapper
+                            label(for="email").input-title E-posta
+                            input(type="email" id="email" name="email" placeholder="E-Posta Adresiniz" required).input
+                        .input-wrapper
+                            label(for="phone").input-title Telefon
+                            input(type="number" id="phone" name="phone" placeholder="Telefon Numaranız" required).input
+                    .input-group
+                        .input-wrapper
+                            label(for="sirket").input-title Şirket
+                            input(type="text" id="sirket" name="sirket" placeholder="Şirket İsminiz" required).input
+                        .input-wrapper
+                            label(for="phone").input-title Çalışan Sayısı
+                            .custom-select
+                                select#employees(name="employees" required)
+                                    option(value="" disabled selected) Çalışan sayısını seçin
+                                    option(value="1-10") 1-10
+                                    option(value="11-50") 11-50
+                                    option(value="51-200") 51-200
+                                    option(value="200+") 200+
+                    .input-wrapper.textarea
+                        label(for="message").input-title Mesajınız
+                        textarea(id="message" name="message" placeholder="Mesajınızı yazınız" required)
+                    .btn.btn--black.js-open-modal(data-modal-id="form-page-success")
+                        span.btn__text Gönder
+
+
+
+
+
+

@@ -1,0 +1,13 @@
+.info(class=infoCustomClass)
+    .info-top
+        if infoImg
+            img(src="assets/img/assesment.svg").info-img
+        else
+            .info-icon
+                svg.icon.icon-font
+                    use(xlink:href='assets/icons/icons.svg#icon-bag')
+        
+        .title.info-title #{infoTitle}
+            br
+            | #{infoTitleBottom}
+    p.text.info-text #{infoText}

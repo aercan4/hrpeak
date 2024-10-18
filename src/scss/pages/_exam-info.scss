@@ -1,0 +1,79 @@
+.exam-info {
+    .subpage-intro {
+        overflow: hidden;
+        background: radial-gradient(46.15% 96.14% at 50% 100%, rgba(154, 177, 199, 0.1) 0%, rgba(179, 215, 248, 0.01) 99.99%, rgba(162, 187, 209, 0.00) 100%);
+    }
+
+    .hero {
+        &-img {
+            border: 0;
+
+            &-wrapper {
+                margin-top: 4rem;
+                margin-bottom: -7rem;
+                width: 62rem;
+                height: 41rem;
+                max-width: 62rem;
+            }
+        }
+    }
+
+    &-what {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 8rem;
+
+        div {
+            &:first-child {
+                max-width: 51rem;
+            }
+
+            &:last-child {
+                max-width: 62rem;
+
+                p {
+                    font-size: 1.6rem;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 30px;
+                    letter-spacing: -0.16px;
+
+                    &+p {
+                        margin-top: 2rem;
+                    }
+                }
+            }
+        }
+
+        &-slider {
+            margin-top: 9rem;
+
+            .swiper-wrapper {
+                .swiper-slide {
+
+                    &:last-child {
+                        .advantage-item__arrow {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &-attention {
+        .container {
+            margin-top: 8rem;
+            padding-top: 8rem;
+            border-top: 1px solid $c-border;
+        }
+
+        &-wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin-top: 6rem;
+            gap: 4rem;
+            row-gap: 5.5rem;
+        }
+    }
+}

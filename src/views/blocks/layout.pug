@@ -1,0 +1,436 @@
+doctype html
+html(lang="en")
+    head
+        block head
+            meta(charset='UTF-8')
+            meta(http-equiv='X-UA-Compatible' content='IE=edge')
+            meta(name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1')
+            //- // Facebook
+            //- meta(property='og:image' content='assets/img/thumb.jpg')
+            //- // Twitter
+            //- meta(property='twitter:image' content='assets/img/thumb.jpg')
+
+            link(rel='icon' type='image/png' sizes='16x16' href='assets/img/favicon.png')
+            link(rel='apple-touch-icon' sizes='180x180' href='assets/img/favicon/favicon.png')
+            link(rel='icon' type='image/png' sizes='32x32' href='assets/img/favicon/favicon.png')
+            link(rel='icon' type='image/png' sizes='16x16' href='assets/img/favicon/favicon.png')
+            meta(name='msapplication-TileColor' content='#da532c')
+            meta(name='theme-color' content='#ffffff')
+            script.
+        block styles
+
+            link(href="https://unpkg.com/swiper@7/swiper-bundle.min.css" rel='stylesheet')
+
+            link(href="assets/css/style.css" rel='stylesheet')
+
+    block vars
+        - var header = true;
+        - var footer = true;
+
+    body
+
+        block header
+            if header
+                .header-wrapper
+                    header.header
+                        .header-left
+                            .main-menu-opener.js-open-main-menu
+                                span
+                                span
+                                span
+                            a(href="./")
+                                img(src="assets/img/logo.svg").logo
+
+                        
+
+                        .header-right
+                            .header-menu
+                                .header-menu-item.has-submenu
+
+                                    .header-menu-item__title Products
+                                        .header-menu-item__shape.icon-font
+                                            svg.icon.icon-font
+                                                use(xlink:href='assets/icons/icons.svg#icon-angledown')
+                                    .submenu-wrapper
+                                        .submenu-top
+                                            .submenu-top-icon.js-close-submenu
+                                                svg.icon.icon-font
+                                                    use(xlink:href='assets/icons/icons.svg#icon-angle-left')
+                                            .submenu-top-title Products
+
+                                        .submenu 
+                                            .submenu-column
+                                                .submenu-item   
+                                                    .submenu-item-head
+                                                        .product-type
+                                                            img(src="assets/img/assesment.svg").product-type-icon
+                                                            .title.product-type-title Online 
+                                                                br 
+                                                                | Assesment Center
+                                                        p.text.submenu-item-text Birden çok aracı bir arada sunan sistem sayesinde daha fazla aday.
+                                                        .submenu-item-mobile-right-icon
+                                                            svg.icon.icon-font
+                                                                use(xlink:href='assets/icons/icons.svg#icon-angle-right')
+                                                    .submenu-item-content 
+                                                        .link.link--i-right.link--gray.link--xmd
+                                                            span.link__text Online Role Play
+
+                                                            span.link__icon.icon-font
+                                                                svg.icon.icon-font
+                                                                    use(xlink:href='assets/icons/icons.svg#icon-right')
+                                                        .link.link--i-right.link--gray.link--xmd
+                                                            span.link__text Online Presentation
+
+                                                            span.link__icon.icon-font
+                                                                svg.icon.icon-font
+                                                                    use(xlink:href='assets/icons/icons.svg#icon-right')
+                                                        .link.link--i-right.link--gray.link--xmd
+                                                            span.link__text Online Case Study
+
+                                                            span.link__icon.icon-font
+                                                                svg.icon.icon-font
+                                                                    use(xlink:href='assets/icons/icons.svg#icon-right')
+                                                        .link.link--i-right.link--gray.link--xmd
+                                                            span.link__text Online Project
+
+                                                            span.link__icon.icon-font
+                                                                svg.icon.icon-font
+                                                                    use(xlink:href='assets/icons/icons.svg#icon-right')
+                                                    
+                                            .submenu-column
+                                                .submenu-item   
+                                                    .submenu-item-head
+                                                        .product-type
+                                                            img(src="assets/img/assesment.svg").product-type-icon
+                                                            .title.product-type-title Online 
+                                                                br 
+                                                                | Assesment Center
+                                                        p.text.submenu-item-text Birden çok aracı bir arada sunan sistem sayesinde daha fazla aday.
+                                                        .submenu-item-mobile-right-icon
+                                                            svg.icon.icon-font
+                                                                use(xlink:href='assets/icons/icons.svg#icon-angle-right')
+                                                    .submenu-item-content 
+                                                        .link.link--i-right.link--gray.link--xmd
+                                                            span.link__text Online Role Play
+
+                                                            span.link__icon.icon-font
+                                                                svg.icon.icon-font
+                                                                    use(xlink:href='assets/icons/icons.svg#icon-right')
+                                                        .link.link--i-right.link--gray.link--xmd
+                                                            span.link__text Online Role Play
+
+                                                            span.link__icon.icon-font
+                                                                svg.icon.icon-font
+                                                                    use(xlink:href='assets/icons/icons.svg#icon-right')
+                                                        .link.link--i-right.link--gray.link--xmd
+                                                            span.link__text Online Role Play
+
+                                                            span.link__icon.icon-font
+                                                                svg.icon.icon-font
+                                                                    use(xlink:href='assets/icons/icons.svg#icon-right')
+                                                        .link.link--i-right.link--gray.link--xmd
+                                                            span.link__text Online Role Play
+
+                                                            span.link__icon.icon-font
+                                                                svg.icon.icon-font
+                                                                    use(xlink:href='assets/icons/icons.svg#icon-right')
+                                            .submenu-column
+                                                .submenu-item   
+                                                    .submenu-item-head
+                                                        .product-type
+                                                            img(src="assets/img/assesment.svg").product-type-icon
+                                                            .title.product-type-title Online 
+                                                                br 
+                                                                | Assesment Center
+                                                        p.text.submenu-item-text Birden çok aracı bir arada sunan sistem sayesinde daha fazla aday.
+                                                        .submenu-item-mobile-right-icon
+                                                            svg.icon.icon-font
+                                                                use(xlink:href='assets/icons/icons.svg#icon-angle-right')
+                                                    .submenu-item-content 
+                                                        .link.link--i-right.link--gray.link--xmd
+                                                            span.link__text Online Role Play
+
+                                                            span.link__icon.icon-font
+                                                                svg.icon.icon-font
+                                                                    use(xlink:href='assets/icons/icons.svg#icon-right')
+                                                        .link.link--i-right.link--gray.link--xmd
+                                                            span.link__text Online Role Play
+
+                                                            span.link__icon.icon-font
+                                                                svg.icon.icon-font
+                                                                    use(xlink:href='assets/icons/icons.svg#icon-right')
+                                                        .link.link--i-right.link--gray.link--xmd
+                                                            span.link__text Online Role Play
+
+                                                            span.link__icon.icon-font
+                                                                svg.icon.icon-font
+                                                                    use(xlink:href='assets/icons/icons.svg#icon-right')
+                                                        .link.link--i-right.link--gray.link--xmd
+                                                            span.link__text Online Role Play
+
+                                                            span.link__icon.icon-font
+                                                                svg.icon.icon-font
+                                                                    use(xlink:href='assets/icons/icons.svg#icon-right')
+                                                                    
+                                            .submenu-column
+                                                .submenu-item   
+                                                    .submenu-item-head
+                                                        .product-type
+                                                            img(src="assets/img/assesment.svg").product-type-icon
+                                                            .title.product-type-title Online 
+                                                                br 
+                                                                | Assesment Center
+                                                        p.text.submenu-item-text Birden çok aracı bir arada sunan sistem sayesinde daha fazla aday.
+                                                        .submenu-item-mobile-right-icon
+                                                            svg.icon.icon-font
+                                                                use(xlink:href='assets/icons/icons.svg#icon-angle-right')
+                                                    
+                                                    .submenu-item-content 
+                                                        .link.link--i-right.link--gray.link--xmd
+                                                            span.link__text Online Role Play
+
+                                                            span.link__icon.icon-font
+                                                                svg.icon.icon-font
+                                                                    use(xlink:href='assets/icons/icons.svg#icon-right')
+                                                        .link.link--i-right.link--gray.link--xmd
+                                                            span.link__text Online Role Play
+
+                                                            span.link__icon.icon-font
+                                                                svg.icon.icon-font
+                                                                    use(xlink:href='assets/icons/icons.svg#icon-right')
+                                                        .link.link--i-right.link--gray.link--xmd
+                                                            span.link__text Online Role Play
+
+                                                            span.link__icon.icon-font
+                                                                svg.icon.icon-font
+                                                                    use(xlink:href='assets/icons/icons.svg#icon-right')
+                                                        .link.link--i-right.link--gray.link--xmd
+                                                            span.link__text Online Role Play
+
+                                                            span.link__icon.icon-font
+                                                                svg.icon.icon-font
+                                                                    use(xlink:href='assets/icons/icons.svg#icon-right')
+
+
+
+                                .header-menu-item
+                                    a(href="references.html").header-menu-item__title References
+                                .header-menu-item
+                                    img(src="assets/img/world.svg").header-menu-item__icon
+                                    a(href="find-talent.html").header-menu-item__title Courses
+                                .header-menu-item
+                                    img(src="assets/img/linkedin.svg").header-menu-item__icon
+                                    a(href="find-talent.html").header-menu-item__title Learning
+                                .header-menu-item
+                                    a(href="").header-menu-item__title
+                                        img(src="assets/img/logo-hrpeax.svg").header-menu-item__logo
+
+                            .header-contact
+
+                                include components/langs
+
+                                .btn.btn--blue.btn--xsm.js-open-modal(data-modal-id='form-modal')
+                                    span.btn__text Demo & Offer
+                            .mobile-menu-footer
+                                .header-contact-info
+                                    a(href="tel:+902165192222").link.link--i-left.link--black.link--lg
+
+                                        span.link__icon.icon-font
+                                            svg.icon.icon-font
+                                                use(xlink:href='assets/icons/icons.svg#icon-mail')
+                                        span.link__text +90 216 519 22 22
+                                    a(href="mailto:info@hrpeak.com").link.link--i-left.link--black.link--lg
+
+                                        span.link__icon.icon-font
+                                            svg.icon.icon-font
+                                                use(xlink:href='assets/icons/icons.svg#icon-phone')
+                                        span.link__text info@hrpeak.com
+                                - var socialTitle = 'Bizi Takip Edin';
+                                - var sharer = false;
+                                include components/social
+                                .mobile-menu-footer-copyright 
+                                    p.text.text--medium-black HRPeak © 2024. Tüm hakları saklıdır
+                                    
+
+                        .header-menu-opener.js-open-menu
+                            span
+                            span
+                            span
+
+                nav.main_menu.custom_scroll
+                    .main_menu-header
+                        .main_menu-close.js-open-main-menu.icon-font
+                            svg.icon.icon-font
+                                use(xlink:href='assets/icons/icons.svg#icon-cancel')
+                        a(href="./").header-logo
+                            img(src="assets/img/logo.svg")
+
+
+                    .main_menu-section
+                        h6.title.title--blue Title 1
+                        a(href="").main_menu__link Link 1
+                        a(href="").main_menu__link Link 2
+                    .main_menu-section
+                        h6.title.title--blue Title 2
+                        a(href="").main_menu__link Link 3
+                        a(href="").main_menu__link Link 4
+                    .main_menu-section
+                        h6.title.title--blue Title 3
+                        a(href="").main_menu__link Link 5
+                        a(href="").main_menu__link Link 6
+                        a(href="").main_menu__link Link 7
+                        a(href="").main_menu__link Link 8
+                        a(href="").main_menu__link Link 9
+                        a(href="").main_menu__link Link 10
+
+
+        // İçerik Başlangıç
+        block content
+
+
+
+        // İçerik Bitiş
+
+
+
+
+        block footer
+
+
+
+
+            .overlay
+            //- .overlay.modal-overlay
+
+            if footer
+                if shortcut
+                    section.shortcut-wrapper
+                        .container
+                            .shortcut
+                                .shortcut-left
+                                    h3.title.title--lg.title--w-shape
+                                        img(src="assets/img/basic-logo.svg")
+                                        .title-content
+                                            | Everything about 
+                                            span.colored-blue Digital HR
+                                    p.text.text--lg İşe alımın değişen kurallarını keşfetmeye hazır mısınız?
+
+                                    .btn.btn--black.btn--md
+                                        span.btn__text Demo & Offer
+
+                                .shortcut-right
+
+                                    img(src="assets/img/shortcut-img1.png")
+
+                footer.footer(class=footerBasic ? 'footer--basic' : '')
+                    .footer-content 
+                        .footer-content-left
+                            .footer-content-left-item
+                                a(href="./")
+                                    img(src="assets/img/logo.svg").logo
+                                p.text.footer-text.text--medium-light.fw-400 The pay is the best, they don’t take a cutplatform through.
+                                .footer-contact 
+                                    a(href="tel:+902165192222").link.link--i-left.link--black.link--lg.fw-400
+
+                                        span.link__icon.icon-font
+                                            svg.icon.icon-font
+                                                use(xlink:href='assets/icons/icons.svg#icon-mail')
+                                        span.link__text +90 216 519 22 22
+                                    a(href="mailto:info@hrpeak.com").link.link--i-left.link--black.link--lg.fw-400
+
+                                        span.link__icon.icon-font
+                                            svg.icon.icon-font
+                                                use(xlink:href='assets/icons/icons.svg#icon-phone')
+                                        span.link__text info@hrpeak.com
+                                    - var socialTitle = 'Bizi Takip Edin';
+                                    - var sharer = false;
+                                    include components/social
+
+                        .footer-content-right
+                            .footer-content-right-section 
+                                include components/questioning
+                            .footer-content-right-section
+                                .title.title--sm.fw-400 Bizim kariyer seçeneklerimizi de düşünün
+                                a(href="").btn.btn--blue.btn--sm.hire-btn
+                                    span.btn__text Kariyer Merkezi
+                                    .badge.badge--blue.badge--sm HIRING 
+                            .footer-content-right-section.title-section
+                                .footer-menu__title Platform
+                                .footer-menu__title Kaynaklar
+                                .footer-menu__title Kurumsal
+                            .footer-content-right-section
+
+                                .footer-menu
+                                    .footer-menu-item
+                                        .footer-menu__title Platform
+                                            svg.icon.icon-font
+                                                use(xlink:href='assets/icons/icons.svg#icon-down')
+                                        .footer-menu-content
+                                            a.footer-menu__link(href='#') Online Assesment Center
+                                            a.footer-menu__link(href='#') Virtual Assesment Center
+                                            a.footer-menu__link(href='#') Gamification
+                                            a.footer-menu__link(href='#') Başvuru Yönetim Modülü
+
+
+
+
+                                    .footer-menu-item
+                                        .footer-menu__title Kaynaklar
+                                            svg.icon.icon-font
+                                                use(xlink:href='assets/icons/icons.svg#icon-down')
+                                        .footer-menu-content
+                                            a.footer-menu__link(href='#') SSS
+                                            a.footer-menu__link(href='#') Müşteri Hizmetleri
+                                    .footer-menu-item
+                                        .footer-menu__title Kurumsal
+                                            svg.icon.icon-font
+                                                use(xlink:href='assets/icons/icons.svg#icon-down')
+                                        .footer-menu-content
+                                            a.footer-menu__link(href='#') Hakkımızda
+                                            a.footer-menu__link(href='#') Blog
+                                            a.footer-menu__link(href='#') Kalite Politikamız
+                                            a.footer-menu__link(href='#') Bize Ulaşın!
+
+
+
+
+
+
+                    .footer-copyright 
+                        p.text.text--sm HRPeak © 2024. Tüm hakları saklıdır
+                        .footer-copyright-links 
+                            a(href="").footer-copyright-link KVKK Aydınlatma Metni
+                            a(href="").footer-copyright-link Çerez Politikası
+                            a(href="").footer-copyright-link İmha Politikası
+                            a(href="").footer-copyright-link Kalite Politikamız
+                            a(href="").footer-copyright-link Bilgi Güvenliği Politikası
+
+
+
+
+
+
+
+        block modal 
+            include components/demo-talep-form
+            include components/demo-form-success
+            include components/form-page-success
+
+
+
+
+
+
+
+        block scripts
+            script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+            script(src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js")
+            //- script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.8-beta.17/jquery.inputmask.min.js")
+
+            script(src='https://unpkg.com/swiper@7/swiper-bundle.min.js')
+
+
+            script(src="assets/js/all.js")
+
+
+

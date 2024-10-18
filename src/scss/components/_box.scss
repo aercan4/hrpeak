@@ -1,0 +1,61 @@
+.box {
+    background: #fff;
+    border-radius: 2rem;
+    border: 1px solid $c-border;
+    box-shadow: $box-shadow;
+    padding: 4.5rem 5.3rem;
+
+    &-title {
+        font-size: 1.9rem;
+    }
+
+    .checklist {
+        margin-top: 5rem;
+    }
+
+    &--light-purple {
+        position: relative;
+        z-index: 10;
+
+        &::before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: radial-gradient(
+                    108.18% 192.53% at 27.39% 197.88%,
+                    rgba(237, 239, 249, 0.75) 58.78%,
+                    rgba(237, 239, 249, 0) 100%
+                ),
+                linear-gradient(135deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.75) 100%),
+                linear-gradient(135deg, rgba(250, 250, 250, 0.375) 21.43%, rgba(255, 255, 255, 0) 77.21%);
+            z-index: -1;
+            transform: rotate(180deg);
+        }
+    }
+
+    &--purple {
+        background: linear-gradient(0deg, #f0f1fa 0%, #f0f1fa 100%), #edf3f9;
+    }
+    &--feature {
+        position: relative;
+        padding: 6rem;
+        .feature {
+            position: absolute;
+            &:nth-of-type(1) {
+                left: -4rem;
+                top: 18rem;
+            }
+            &:nth-of-type(2) {
+                right: -4rem;
+                bottom: 11rem;
+            }
+        }
+    }
+    &-main-img {
+        width: 100%;
+        height: 43rem;
+    }
+}

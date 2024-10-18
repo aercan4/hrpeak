@@ -1,0 +1,301 @@
+extends blocks/layout
+block vars
+    - var index = true;
+    - var header = true;
+    - var footer = true;
+    - var shortcut = true;
+
+block append head
+    title Hr Peak
+    meta(name='description', content="One tool to manage contracts and your team")
+    // Facebook
+    meta(property='og:title' content='Hr Peak')
+    meta(property='og:description' content="One tool to manage contracts and your team")
+    meta(property='og:image' content='assets/img/thumb.jpg')
+    // Twitter
+    meta(property='twitter:url' content='#')
+    meta(property='twitter:title' content='Hr Peak')
+    meta(property='twitter:description' content="One tool to manage contracts and your team")
+    meta(property='og:image' content='assets/img/thumb.jpg')
+    
+block content
+    .index
+        
+        .index-intro 
+            .container 
+                .hero
+                    h1.title.title--xxl.title--center.hero-title State of Art
+                        span.colored-blue.d-block Assessment Center
+                    p.text.text--center.text--lg.mt-1 HrpeaX is exceptional! The pay is the best, they don’t take a cutplatform through.
+                    .btn.btn--black.hero-btn
+                        span.btn__text Demo & Offer
+                    .hero-img-wrapper
+                        img(src="assets/img/index-hero.jpg").hero-img
+                        .feature-wrapper
+                            include blocks/components/feature
+                            include blocks/components/feature
+                            include blocks/components/feature
+                        .user-shape-wrapper
+                            img(src="assets/img/user-shape.png").user-shape
+                            img(src="assets/img/user-shape.png").user-shape
+                            img(src="assets/img/user-shape.png").user-shape
+                            img(src="assets/img/user-shape.png").user-shape
+                            img(src="assets/img/user-shape.png").user-shape
+            .circle-wrapper
+                include blocks/components/circle
+                - var circleCustomClass = "animation-2"
+
+                include blocks/components/circle
+                - var circleCustomClass = "animation-3"
+
+                include blocks/components/circle
+                - var circleCustomClass = false
+
+                include blocks/components/circle
+                - var circleCustomClass = "animation-2"
+
+                include blocks/components/circle
+                - var circleCustomClass = "animation-4"
+
+                include blocks/components/circle
+                        
+            img(src="assets/img/hero-grid.svg").bg-grid
+        .index-content 
+            
+            
+            
+           
+            section.section.section--center
+                
+                .container
+                    .section-head
+                        h3.title.title--black.title--md.title--center.section-head-title  Why HRPeak Assessment Center?
+                        p.text.text--medium-light.section-head-text HrpeaX is exceptional! The pay is the best, they don’t take a cutplatform through.
+
+                    //- .advantage-item-slider.swiper-container.visible-active
+                    //-     .swiper-wrapper
+                    //-         .swiper-slide 
+                    //-             - var title = "Simplify the candidate evaluation processes."
+                    //-             - var icon = "assets/img/framed_user.svg"
+                    //-             include blocks/components/advantage-item
+                    //-         .swiper-slide 
+                    //-             - var title = "Increase brand brand value."
+                    //-             - var icon = "assets/img/diamond.svg"
+                    //-             include blocks/components/advantage-item
+                    //-         .swiper-slide 
+                    //-             - var title = "Simplify the candidate evaluation processes."
+                    //-             - var icon = "assets/img/integrated.svg"
+                    //-             include blocks/components/advantage-item
+                    //-         .swiper-slide 
+                    //-             - var title = "Find the best candidate, fast!"
+                    //-             - var icon = "assets/img/data_storage.svg"
+                    //-             include blocks/components/advantage-item
+                    //-         .swiper-slide 
+                    //-             - var title = "Find the best candidate, fast!"
+                    //-             - var icon = "assets/img/candidate.svg"
+                    //-             include blocks/components/advantage-item
+                    .advantage-item-wrapper
+                        - var title = "Simplify the candidate evaluation processes."
+                        - var icon = "assets/img/framed_user.svg"
+                        include blocks/components/advantage-item
+                        - var title = "Increase brand brand value."
+                        - var icon = "assets/img/diamond.svg"
+                        include blocks/components/advantage-item
+                        - var title = "Simplify the candidate evaluation processes."
+                        - var icon = "assets/img/integrated.svg"
+                        include blocks/components/advantage-item
+                        - var title = "Find the best candidate, fast!"
+                        - var icon = "assets/img/data_storage.svg"
+                        include blocks/components/advantage-item
+                        - var title = "Find the best candidate, fast!"
+                        - var icon = "assets/img/candidate.svg"
+                        include blocks/components/advantage-item
+                       
+            
+              
+            section.section.with-top-border.section--center
+                .section-divider-shape   
+                    img(src="assets/img/basic-logo.svg")
+                .container
+                    .section-head
+                        img(src="assets/img/logo.svg").logo
+                        h3.title.title--black.title--md.section-head-title  Assessment Center Modules
+                    .assessment-card-grid
+                        include blocks/components/assessment-card
+                        include blocks/components/assessment-card
+                        include blocks/components/assessment-card
+                        include blocks/components/assessment-card
+                   
+            section.section.section--center.marquee-section.with-top-border
+                .section-divider-shape   
+                    img(src="assets/img/basic-logo.svg")
+                .container
+                    .section-head
+                        h3.title.title--blue.title--md.section-head-title  100+ 
+                            span.colored-black Dijitalleşen Markalarımız ile
+                        p.text.text--medium-light HrpeaX is exceptional! The pay is the best, they don’t take a cutplatform through.
+
+                .marquee-wrapper
+                    .marquee
+                        .marquee-content 
+                            .marquee-item 
+                                img(src="assets/img/petrol_ofisi.svg")
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item 
+                                img(src="assets/img/petrol_ofisi.svg")
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item 
+                                img(src="assets/img/petrol_ofisi.svg")
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item 
+                                img(src="assets/img/petrol_ofisi.svg")
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                    .marquee
+                        .marquee-content 
+                            .marquee-item 
+                                img(src="assets/img/petrol_ofisi.svg")
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item 
+                                img(src="assets/img/petrol_ofisi.svg")
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item 
+                                img(src="assets/img/petrol_ofisi.svg")
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item 
+                                img(src="assets/img/petrol_ofisi.svg")
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                    .marquee
+                        .marquee-content 
+                            .marquee-item 
+                                img(src="assets/img/petrol_ofisi.svg")
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item 
+                                img(src="assets/img/petrol_ofisi.svg")
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item 
+                                img(src="assets/img/petrol_ofisi.svg")
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item 
+                                img(src="assets/img/petrol_ofisi.svg")
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                            .marquee-item  
+                                img(src="assets/img/petrol_ofisi.svg") 
+                    img(src="assets/img/world-dekuped.png").marquee-wrapper-bg  
+                      
+                        
+
+                            
+                
+         
+
+
+
+
+
+

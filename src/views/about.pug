@@ -1,0 +1,96 @@
+extends blocks/layout
+block vars
+    - var index = true;
+    - var header = true;
+    - var footer = true;
+    - var shortcut = true;
+    - var shortcutTalentImg = true;
+
+block append head
+    title About | Hr Peak
+    meta(name='description' content="One tool to manage contracts and your team")
+    // Facebook
+    meta(property='og:title' content='Hr Peak')
+    meta(property='og:description' content="One tool to manage contracts and your team")
+    meta(property='og:image' content='assets/img/thumb.jpg')
+    // Twitter
+    meta(property='twitter:url' content='#')
+    meta(property='twitter:title' content='Hr Peak')
+    meta(property='twitter:description' content="One tool to manage contracts and your team")
+    meta(property='og:image' content='assets/img/thumb.jpg')
+
+block content 
+    .subpage.about
+
+        .subpage-intro.subpage-intro-dark 
+            .container 
+                .hero.hero-left
+                    h5.toptitle About Us
+                    h1.title.title--xxl.title--center.hero-title We make it effortlessly to track all user analytics
+                .hero-logo 
+                    img(src="assets/img/hr-logo.png" alt="Hr Peak")
+
+
+
+        .subpage-content   
+            .about-count-section 
+                .container
+                    .about-count-section-img 
+                        img(src="assets/img/about.png" alt="") 
+                    .about-count-section-content 
+                        .about-count-section-content-left 
+                            h3.title We make it effortlessly to track all user analytics
+                            .about-count-section-content-left-wrapper 
+                                .count-item 
+                                    h2.title 500+
+                                    p.text Project Completed 
+                                .count-item 
+                                    h2.title 95%
+                                    p.text Client Satisfaction
+                                .count-item 
+                                    h2.title 20+
+                                    p.text Years of Experience
+                                .count-item 
+                                    h2.title 500+
+                                    p.text Testimonials 
+                        .content
+                            p HRPeak teknoloji temelli İK çözümleri üreten bir online değerlendirme platformudur. İnovatif fikirleri ile tecrübesini birleştiren uzman yazılım ve akademi ekibinin ortaya çıkardığı, farklı değerlendirme araçlarını bir arada sunan ilk dijital platform olma özelliğini taşıyan HRPeak, sektörün öncü firmalarındandır.
+                            p Kısa sürede gerçekleştirdiği atılımlarla yurt içinde dijitalleşen İK sektöründe oyun kurucular arasındaki yerini alan HRPeak, farklı lokasyonlardaki şubeleriyle, geliştirdiği ürünleri ve kalite odaklı hizmet anlayışını uluslararası boyutlarda da sergilemektedir.
+                            p İçerisinde global şirketlerin de bulunduğu 1000’den fazla firmaya hizmet sağlayan HRPeak, partnerlerinin işe alım ve değerlendirme süreçlerini kolaylaştırmak için online İK çözümleri sunmaya devam ediyor.
+            .about-slider-section 
+                .container 
+                    .section-head
+                        div
+                            h5.toptitle Tarihçemiz
+                            p.title.title--lmd.fw-400 We make it effortlessly to track all user analytics
+                        .history-item-slider-navigation 
+                            .btn.btn--i.btn--dark-black.btn--prev.history-item-slider-prev 
+                                svg.icon.icon-font 
+                                    use(xlink:href='assets/icons/icons.svg#icon-down')
+                            .btn.btn--i.btn--dark-black.btn--next.history-item-slider-next
+                                svg.icon.icon-font 
+                                    use(xlink:href='assets/icons/icons.svg#icon-down')
+                    .history-item-slider.swiper-container.visible-active
+                        .swiper-wrapper
+                            .swiper-slide 
+                                include blocks/components/history-item
+                            .swiper-slide 
+                                include blocks/components/history-item
+                            .swiper-slide 
+                                include blocks/components/history-item
+                            .swiper-slide 
+                                include blocks/components/history-item
+                            .swiper-slide 
+                                include blocks/components/history-item
+            .why-use-section 
+                .container 
+                    h5.toptitle Neden Biz?
+                    p.title.title--lmd.fw-400 We make it effortlessly to track all user analytics
+                    .why-use-wrapper
+                        include blocks/components/why-use-item
+                        include blocks/components/why-use-item
+                        include blocks/components/why-use-item
+                        include blocks/components/why-use-item
+                        include blocks/components/why-use-item
+                        include blocks/components/why-use-item
+

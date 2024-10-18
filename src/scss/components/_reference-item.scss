@@ -1,0 +1,15 @@
+.reference-item {
+    height: 6.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $c-white;
+    border-radius: 1.6rem;
+
+    img {
+        height: 5.5rem;
+        height: auto;
+        object-fit: contain;
+        width: 100%;
+    }
+}
